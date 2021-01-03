@@ -50,6 +50,7 @@ const Header = () => {
                   width: "70px",
                   height: "70px",
                   color: "white",
+                  
                 }}
               />
             </a>
