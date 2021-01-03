@@ -56,7 +56,7 @@ const Container = styled.div`
     position: relative;
     left: 80px;
     margin: 10px;
-    padding: 20px;
+    padding: 20px; 
   }
 
   .paragraph1 {
@@ -71,7 +71,7 @@ const Container = styled.div`
     position: relative;
     left: 80px;
     margin: 10px;
-    padding: 20px;
+    padding: 20px; 
   }
 
   .box1 {
@@ -85,19 +85,7 @@ const Container = styled.div`
 
   .box1-1 {
     background: black;
-    width: 97%;
-  }
-  .box1-1 {
-    background: black;
-    width: 97%;
-  }
-  .box1-1 {
-    background: black;
-    width: 97%;
-  }
-  .box1-1 {
-    background: black;
-    width: 97%;
+    width: 50%;
   }
   .box1-2 {
     background: black;
