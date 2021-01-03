@@ -68,7 +68,7 @@ const Body = styled.div`
   list-style-type: none;
   align-items: center;
   width: 100%;
-  position: absolute;
+  position: sticky;
   top: 0;
   z-index: 999;
 

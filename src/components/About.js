@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Skills from './Skills';
+import Skills from "./Skills";
 import GitHubIcon from "@material-ui/icons/GitHub";
-
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook"; 
 
 const About = () => {
   return (
-    <Container id="about">
+    <Container id="about"> 
       <div className="wrapper1">
         <img src="./videos/mypic.PNG" alt="pic" />
         <div className="text">
@@ -26,15 +27,36 @@ const About = () => {
         <h1 className="heading2">Contact details</h1>
         <p>Saddam Salokhiddinov</p>
         <p>Uzbekistan</p>
-        <a href="https://github.com/Saddam-tech" target='blank'>
-              <GitHubIcon
-                style={{
-                  width: "70px",
-                  height: "70px",
-                  color: "white", 
-                }}
-              />
-            </a>
+        <div className='icons'>
+          <a href="https://github.com/Saddam-tech" target="blank">
+            <GitHubIcon
+              style={{
+                width: "30px",
+                height: "30px",
+                color: "white",
+              }}
+            />
+          </a>
+          <a href="https://www.instagram.com/salokhiddeenov727/" target="blank">
+            <InstagramIcon
+              style={{
+                width: "30px",
+                height: "30px",
+                color: "white",
+              }}
+            />
+          </a>
+          <a href="https://www.facebook.com/saddam.salokhiddinov" target="blank">
+            {" "}
+            <FacebookIcon
+              style={{
+                width: "30px",
+                height: "30px",
+                color: "white",
+              }}
+            />
+          </a>
+        </div>
       </div>
       <Skills />
     </Container>
@@ -98,4 +120,11 @@ const Container = styled.div`
     margin: 10px;
     padding: 20px;
   }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+  }
+   
 `;

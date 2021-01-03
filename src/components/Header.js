@@ -6,12 +6,13 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
 import { Bounce, Fade } from "react-reveal";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
     <Body id="header">
-      <video src="./videos/video-11.mp4" autoPlay loop muted />
-
+      <Navbar />
+      <video src="./videos/video-11.mp4" autoPlay loop muted /> 
       <div className="text">
         <Bounce>
           <img src="./videos/mypic.PNG" className="pic" alt="pic" />
@@ -28,8 +29,8 @@ const Header = () => {
             <a href="https://github.com/Saddam-tech">
               <GitHubIcon
                 style={{
-                  width: "70px",
-                  height: "70px",
+                  width: "40px",
+                  height: "40px",
                   color: "white",
                 }}
               />
@@ -37,9 +38,9 @@ const Header = () => {
             <a href="https://www.instagram.com/salokhiddeenov727/">
               <InstagramIcon
                 style={{
-                  width: "70px",
-                  height: "70px",
-                  color: "white",
+                  width: "40px",
+                  height: "40px",
+                  color: "white", 
                 }}
               />
             </a>
@@ -47,10 +48,9 @@ const Header = () => {
               {" "}
               <FacebookIcon
                 style={{
-                  width: "70px",
-                  height: "70px",
+                  width: "40px",
+                  height: "40px",
                   color: "white",
-                  
                 }}
               />
             </a>
@@ -60,7 +60,7 @@ const Header = () => {
 
       <div className="icon2">
         <Scroll to="about" smooth={true} duration={1000} spy={true}>
-          <ArrowDropDownCircleIcon style={{ fontSize: "70px" }} />
+          <ArrowDropDownCircleIcon style={{ fontSize: "50px" }} />
         </Scroll>
       </div>
     </Body>
@@ -108,13 +108,14 @@ const Body = styled.div`
  }
  .icons {
      display: flex;
-     width: 35%; 
+     width: 25%; 
      justify-content: space-around;
      align-items: center;
      position: relative;
      color: white;
-     left: 250px;
+     left: 270px;
      top: -200px
+      
  }
  .icon2 {
    display: flex; 
