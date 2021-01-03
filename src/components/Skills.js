@@ -1,0 +1,118 @@
+import React from "react";
+import styled from "styled-components";
+
+const Skills = () => {
+  return (
+    <Container>
+      <div className="container-1">
+        <h1 className="heading-1">Education</h1>
+        <p className="paragraph1">
+          The bachelor`s degree in Business administration at Sejong University
+          in Seoul, South Korea
+        </p>
+      </div>
+      <div className="container-2">
+        <h1 className="heading-2">Skills</h1>
+        <h2>HTML5</h2>
+        <div className="box1">
+          <div className="box1-1">HTML5</div>
+        </div>
+        <h2>CSS</h2>
+        <div className="box1">
+          <div className="box1-2">CSS</div>
+        </div>
+        <h2>JavaScript</h2>
+        <div className="box1">
+          <div className="box1-3">JavaScript</div>
+        </div>
+        <h2>ReactJs</h2>
+        <div className="box1">
+          <div className="box1-4">ReactJs</div>
+        </div>
+        <h2>NodeJs</h2>
+        <div className="box1">
+          <div className="box1-5">NodeJs</div>
+        </div>
+      </div>
+    </Container>
+  );
+};
+
+export default Skills;
+
+const Container = styled.div`
+  background: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: 80px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .paragraph1 {
+    font-size: 23px;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: 80px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .box1 {
+    display: flex;
+    align-items: center;
+    background: #e9e9e9;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+  }
+
+  .box1-1 {
+    background: black;
+    width: 97%;
+  }
+  .box1-1 {
+    background: black;
+    width: 97%;
+  }
+  .box1-1 {
+    background: black;
+    width: 97%;
+  }
+  .box1-1 {
+    background: black;
+    width: 97%;
+  }
+  .box1-2 {
+    background: black;
+    width: 90%;
+  }
+  .box1-3 {
+    background: black;
+    width: 90%;
+  }
+  .box1-4 {
+    background: black;
+    width: 93%;
+  }
+  .box1-5 {
+    background: black;
+    width: 90%;
+  }
+`;
