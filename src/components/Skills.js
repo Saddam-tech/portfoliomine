@@ -19,7 +19,7 @@ const Skills = () => {
         </div>
         <h2>CSS</h2>
         <div className="box1">
-          <div className="box1-2">CSS</div>
+          <div className="box1-2">CSS3</div>
         </div>
         <h2>JavaScript</h2>
         <div className="box1">
@@ -85,7 +85,7 @@ const Container = styled.div`
 
   .box1-1 {
     background: black;
-    width: 50%;
+    width: 97%;
   }
   .box1-2 {
     background: black;
