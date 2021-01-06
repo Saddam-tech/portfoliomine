@@ -38,7 +38,7 @@ const Navbar = () => {
                 spy={true}
                 className="link"
               >
-                Resume
+                Projects
               </Scroll>
             </li>
             <li>
