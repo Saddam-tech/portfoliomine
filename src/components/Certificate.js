@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+ 
 
-const Project = (props) => {
+const Certificates = (props) => {
   return (
     <Container>
       <div className="container">
-        <h3>{props.title}</h3>
-        <h4>{props.description}</h4>
-        <a href={props.link} target="blank">
-          <img src="./videos/skynet.png" alt="pic" className="image" />
-        </a>
+        <h1>{props.title}</h1>
+        <h3>{props.content}</h3>
+        <img src="./videos/myDiploma.jpg" alt="diploma" className="image" />
       </div>
+       
     </Container>
   );
 };
 
-export default Project;
+export default Certificates;
 
 const Container = styled.div`
   display: flex;
@@ -55,7 +55,7 @@ const Container = styled.div`
   .image {
     width: 100%;
     height: 50%;
-    position: relative;  
+    position: relative;
     box-shadow: 9px 9px 9px #000000;
   }
 `;

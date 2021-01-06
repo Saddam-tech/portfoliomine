@@ -11,7 +11,7 @@ const Navbar = () => {
           <ul className="ul">
             <li>
               <Scroll
-                to="header" 
+                to="header"
                 smooth={true}
                 duration={1000}
                 className="link"
@@ -21,7 +21,7 @@ const Navbar = () => {
             </li>
             <li>
               <Scroll
-                to="about" 
+                to="about"
                 smooth={true}
                 duration={1000}
                 spy={true}
@@ -68,9 +68,16 @@ const Body = styled.div`
   list-style-type: none;
   align-items: center;
   width: 100%;
+  z-index: 1;
   position: sticky;
   top: 0;
-  z-index: 999;
+
+  @media screen and (max-width: 728px) {
+    width: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(55, 105, 202, 0.14);
+  }
 
   .navigation {
     display: flex;
@@ -79,11 +86,10 @@ const Body = styled.div`
     list-style-type: none;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+
     :hover {
       background: rgba(55, 105, 202, 0.14);
       transition: 0.5s ease;
-      opacity: 1;
     }
   }
 
@@ -95,6 +101,10 @@ const Body = styled.div`
     list-style-type: none;
     width: 40%;
     height: 30px;
+    opacity: 0.6;
+    :hover {
+      opacity: 1;
+    }
   }
 
   .link {

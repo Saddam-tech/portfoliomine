@@ -56,7 +56,15 @@ const Container = styled.div`
     position: relative;
     left: 80px;
     margin: 10px;
-    padding: 20px; 
+    padding: 20px;
+    
+    @media screen and (max-width: 728px) {
+      position: static;
+      font-size: 20px;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .paragraph1 {
@@ -70,8 +78,15 @@ const Container = styled.div`
     height: 100%;
     position: relative;
     left: 80px;
-    margin: 10px;
-    padding: 20px; 
+    margin-bottom: 70px;
+    
+    @media screen and (max-width: 728px) {
+      position: static;
+      font-size: 20px;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .box1 {
