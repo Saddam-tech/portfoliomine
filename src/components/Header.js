@@ -11,7 +11,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const Header = () => {
   return (
-    <Container>
+    <Container id='header'> 
       <Navbar />
       <video src="./videos/video-11.mp4" autoPlay loop muted />
       <div className="container">
