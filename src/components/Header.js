@@ -8,10 +8,11 @@ import { Link as Scroll } from "react-scroll";
 import { Bounce } from "react-reveal";
 import Navbar from "./Navbar";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import Background from "../assets/main2.jpg";
 
 const Header = () => {
   return (
-    <Container id='header'> 
+    <Container id="header">
       <Navbar />
       <video src="./videos/video-11.mp4" autoPlay loop muted />
       <div className="container">
@@ -104,6 +105,11 @@ const Container = styled.div`
  object-fit: contain; 
  background-size: cover; 
  background-position: center;
+
+ @media screen and (max-width: 728px) {
+   background: url(${Background})
+ }
+
 
   .container {
     display: flex;
