@@ -10,8 +10,6 @@ const About = () => {
   return (
     <Container id="about">
       <div className="container">
-        <img src="./videos/mypic.PNG" className="pic" alt="pic" />
-
         <div className="content">
           <h1 className="heading1">About me</h1>
           <p>
@@ -104,7 +102,8 @@ const Container = styled.div`
 
   .content {
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-direction: column; 
     width: 100%; 
     margin-left: 20px;
@@ -117,25 +116,10 @@ const Container = styled.div`
     }
     
   }
-
-  .pic {
-    margin: 10px;
-    padding: 10px;
-    width: 15%;
-    height: 50%;
-    margin-left: 250px;
-    
-
-    @media screen and (max-width: 728px) {
-      margin: 10px;
-      padding: 10px;
-      width: 50%;
-      height: 70%;
-    }
-  }
+ 
 
   p {
-    width: 70%;
+    width: 40%;
     @media screen and (max-width: 728px) {
       width: 100%;
     }

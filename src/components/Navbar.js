@@ -118,7 +118,7 @@ const Body = styled.div`
 
     :hover {
       background: rgba(55, 105, 202, 0.14);
-      color: black;
+      color: gray;
       transition: 0.5;
     }
   }

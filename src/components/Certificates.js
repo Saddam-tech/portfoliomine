@@ -93,6 +93,7 @@ const Container = styled.div`
   .icon {
     color: #ffffff;
     font-size: 100px;
+    width: 100%; 
 
     :hover {
       color: #000000;

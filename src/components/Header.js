@@ -8,7 +8,7 @@ import { Link as Scroll } from "react-scroll";
 import { Bounce } from "react-reveal";
 import Navbar from "./Navbar";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import Background from "../assets/main2.jpg";
+import Background from "../assets/tree.jpeg";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
       <video src="./videos/video-11.mp4" autoPlay loop muted />
       <div className="container">
         <Bounce>
-          <img src="./videos/mypic.PNG" className="pic" alt="pic" />
+          <img src="./videos/avatar.svg" className="pic" alt="pic" />
         </Bounce>
         <div className="text">
           <Bounce>
@@ -107,7 +107,7 @@ const Container = styled.div`
  background-position: center;
 
  @media screen and (max-width: 728px) {
-   background: url(${Background})
+   background: url(${Background}); 
  }
 
 
@@ -143,7 +143,7 @@ const Container = styled.div`
 
   h1 {
     color: #ffffff;
-    font-size: 80px;
+    font-size: 70px;
     margin: 10px;
     padding: 10px;
     font-family: Optima, sans-serif;
