@@ -60,16 +60,14 @@ const Container = styled.div`
     
     @media screen and (max-width: 728px) {
       position: static;
-      font-size: 20px;
+      font-size: 17px;
       width: 90%;
       justify-content: center;
       align-items: center;
     }
   }
 
-  .paragraph1 {
-    font-size: 23px;
-  }
+  
 
   .container-2 {
     display: flex;
@@ -82,7 +80,7 @@ const Container = styled.div`
     
     @media screen and (max-width: 728px) {
       position: static;
-      font-size: 20px;
+      font-size: 17px;
       width: 90%;
       justify-content: center;
       align-items: center;

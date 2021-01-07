@@ -113,6 +113,7 @@ const Container = styled.div`
     @media screen and (max-width: 728px) {
       margin: 0;
       padding: 0; 
+      font-size: 17px;
     }
     
   }
@@ -125,7 +126,7 @@ const Container = styled.div`
     }
 
   }
-
+ 
   .icons {
     display: flex;
     align-items: center;
