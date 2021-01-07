@@ -127,7 +127,7 @@ const Container = styled.div`
   }
 
   .text {
-    display: flex;
+    display: flex; 
     width: 45%;
     height: 50%;
     padding: 10px;
@@ -137,13 +137,13 @@ const Container = styled.div`
     @media screen and (max-width: 728px) {
       width: 100%;
       margin-top: 10px;
-      margin-left: 30px;
+      margin-left: 45px;
     }
   }
 
   h1 {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 80px;
     margin: 10px;
     padding: 10px;
     font-family: Optima, sans-serif;
