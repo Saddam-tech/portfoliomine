@@ -107,7 +107,8 @@ const Container = styled.div`
  background-position: center;
 
  @media screen and (max-width: 728px) {
-   background: url(${Background}); 
+   background: url(${Background});
+   background-attachment: fixed; 
  }
 
 
