@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Background from "../assets/lights2.jpg";
 import Certificate from "./Certificate";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
 
 const Certificates = () => {
@@ -29,9 +29,9 @@ const Certificates = () => {
           {certificate}
           {certificate}
           <div className="icon-container">
-            <Scroll to="header" duration={1000} smooth={true} spy={true}>
-              <ArrowUpwardIcon className="icon" />
-            </Scroll>
+          <Scroll to="header" smooth={true} duration={1000} spy={true}>
+            <ArrowDropDownCircleIcon style={{ fontSize: "50px", color: 'white' }} />
+          </Scroll>
           </div>
         </div>
       ))}
@@ -74,32 +74,14 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 10px solid #ffffff;
-    border-radius: 0 100px;
-    transition: 0.5s ease-out;
-
+    cursor: pointer;
+    transform: rotate(180deg);
     @media screen and (max-width: 728px) {
       width: 100%;
     }
 
-    :hover {
-      background-color: #ffffff;
-      cursor: pointer;
-      border-radius: 100px;
-      transition: 0.5s ease-in;
-    }
+     
   }
 
-  .icon {
-    color: #ffffff;
-    font-size: 100px;
-    width: 100%; 
-
-    :hover {
-      color: #000000;
-    }
-    @media screen and (max-width: 728px) {
-      width: 100%;
-    }
-  }
+  
 `;
