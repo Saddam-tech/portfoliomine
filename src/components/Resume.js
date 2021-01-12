@@ -26,7 +26,7 @@ const Resume = () => {
   return (
     <Container id="resume">
       {project.map((project) => (
-        <Fade bottom> 
+        <Fade> 
           <div className="container">
             {project}
             {project}

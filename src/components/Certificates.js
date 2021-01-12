@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import styled from "styled-components";
 import Background from "../assets/lights2.jpg";
 import Certificate from "./Certificate";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
-import { Link as Scroll } from "react-scroll";
-import { Fade } from "react-reveal";
+import { Link as Scroll } from "react-scroll"; 
 
 const Certificates = () => {
   const [certificates] = useState([
@@ -22,7 +21,7 @@ const Certificates = () => {
   return (
     <Container id="testimonial">
       {certificate.map((certificate) => (
-        <Fade bottom> 
+        <Fragment>
         <div className="container">
           {certificate}
           {certificate}
@@ -30,13 +29,15 @@ const Certificates = () => {
           {certificate}
           {certificate}
           {certificate}
-          <div className="icon-container">
-          <Scroll to="header" smooth={true} duration={1000} spy={true}>
-            <ArrowDropDownCircleIcon style={{ fontSize: "50px", color: 'white' }} />
-          </Scroll>
-          </div>
         </div>
-        </Fade>
+        <div className="icon-container">
+        <Scroll to="header" smooth={true} duration={1000} spy={true}>
+          <ArrowDropDownCircleIcon
+            style={{ fontSize: "50px", color: "white" }}
+          />
+        </Scroll>
+      </div>
+      </Fragment>
       ))}
     </Container>
   );
@@ -46,7 +47,7 @@ export default Certificates;
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background-image: url(${Background});
@@ -73,7 +74,7 @@ const Container = styled.div`
   }
   .icon-container {
     display: flex;
-    width: 20%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -82,9 +83,5 @@ const Container = styled.div`
     @media screen and (max-width: 728px) {
       width: 100%;
     }
-
-     
   }
-
-  
 `;

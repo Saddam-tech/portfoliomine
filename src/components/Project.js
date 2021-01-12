@@ -25,7 +25,7 @@ const Container = styled.div`
   justify-content: center;
   margin: 30px;
   padding: 30px;
-  border: 10px solid white;
+  border: 2px solid white;
   border-radius: 0 100px;
   cursor: pointer;
   transition: 0.5s ease-out;

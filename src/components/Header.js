@@ -83,7 +83,7 @@ const Header = () => {
           </Fade>
         </div>
       </div>
-      <Fade>
+      <Fade bottom>
         <div className="icon2">
           <Scroll to="about" smooth={true} duration={1000} spy={true}>
             <ArrowDropDownCircleIcon style={{ fontSize: "50px" }} />

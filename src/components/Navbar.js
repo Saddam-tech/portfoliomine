@@ -6,7 +6,7 @@ import { Link as Scroll } from "react-scroll";
 const Navbar = () => {
   return (
     <Body>
-      <Fade>
+      <Fade top>
         <nav className="navigation">
           <ul className="ul">
             <li>
