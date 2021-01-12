@@ -5,22 +5,28 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import EmailIcon from "@material-ui/icons/Email";
+import {Fade} from 'react-reveal';
 
 const About = () => {
   return (
-    <Container id="about">
+    <Container id="about"> 
       <div className="container">
         <div className="content">
-          <h1 className="heading1">About me</h1>
+         <Fade right>
+           <h1 className="heading1">About me</h1>
           <p>
             I am Saddam Salokhiddinov and I am a 3rd year student at Sejong
             university in Seoul and a software engineer with hands-on experience
             mostly in web development and have a really good background on
             back-end tools like NodeJs, ExpressJs and MongoDB
           </p>
+          </Fade>
+          <Fade left> 
           <h1 className="heading2">Contact details</h1>
           <p>Saddam Salokhiddinov</p>
           <p>From Uzbekistan, living in Seoul, South Korea</p>
+          </Fade>
+          <Fade right>
           <div className="icons">
             <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
               <EmailIcon
@@ -66,9 +72,9 @@ const About = () => {
               />
             </a>
           </div>
+          </Fade>
         </div>
-      </div>
-
+      </div> 
       <Skills />
     </Container>
   );

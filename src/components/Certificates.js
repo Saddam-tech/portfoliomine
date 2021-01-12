@@ -4,6 +4,7 @@ import Background from "../assets/lights2.jpg";
 import Certificate from "./Certificate";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
+import { Fade } from "react-reveal";
 
 const Certificates = () => {
   const [certificates] = useState([
@@ -21,6 +22,7 @@ const Certificates = () => {
   return (
     <Container id="testimonial">
       {certificate.map((certificate) => (
+        <Fade bottom> 
         <div className="container">
           {certificate}
           {certificate}
@@ -34,6 +36,7 @@ const Certificates = () => {
           </Scroll>
           </div>
         </div>
+        </Fade>
       ))}
     </Container>
   );

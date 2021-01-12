@@ -5,7 +5,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import Navbar from "./Navbar";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Background from "../assets/tree.jpeg";
@@ -16,11 +16,11 @@ const Header = () => {
       <Navbar />
       <video src="./videos/video-11.mp4" autoPlay loop muted />
       <div className="container">
-        <Bounce>
+        <Fade bottom>
           <img src="./videos/avatar.svg" className="pic" alt="pic" />
-        </Bounce>
+        </Fade>
         <div className="text">
-          <Bounce>
+          <Fade bottom>
             <h1>
               Hi, I am Saddam
               <br />
@@ -28,9 +28,9 @@ const Header = () => {
               <br />
               Web developer
             </h1>
-          </Bounce>
+          </Fade>
 
-          <Bounce>
+          <Fade bottom>
             <div className="icons">
               <a href="https://github.com/Saddam-tech" target="blank">
                 <GitHubIcon
@@ -80,16 +80,16 @@ const Header = () => {
                 />
               </a>
             </div>
-          </Bounce>
+          </Fade>
         </div>
       </div>
-      <Bounce>
+      <Fade>
         <div className="icon2">
           <Scroll to="about" smooth={true} duration={1000} spy={true}>
             <ArrowDropDownCircleIcon style={{ fontSize: "50px" }} />
           </Scroll>
         </div>
-      </Bounce>
+      </Fade>
     </Container>
   );
 };

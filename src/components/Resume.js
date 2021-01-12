@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Project from "./Project";
 import Background from "../assets/background.jpeg";
+import { Fade } from "react-reveal";
 
 const Resume = () => {
   const [projects] = useState([
@@ -25,14 +26,16 @@ const Resume = () => {
   return (
     <Container id="resume">
       {project.map((project) => (
-        <div className="container">
-          {project}
-          {project}
-          {project}
-          {project}
-          {project}
-          {project}
-        </div>
+        <Fade bottom> 
+          <div className="container">
+            {project}
+            {project}
+            {project}
+            {project}
+            {project}
+            {project}
+          </div>
+        </Fade>
       ))}
     </Container>
   );
@@ -50,8 +53,6 @@ const Container = styled.div`
   background-position: center;
   object-fit: contain;
   background-repeat: no-repeat;
-  
-   
 
   .container {
     display: flex;

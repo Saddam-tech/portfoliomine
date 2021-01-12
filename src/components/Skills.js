@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import {Fade} from 'react-reveal';
 
 const Skills = () => {
   return (
     <Container>
+      <Fade right>
       <div className="container-1">
         <h1 className="heading-1">Education</h1>
         <p>
@@ -11,28 +13,39 @@ const Skills = () => {
           in Seoul, South Korea
         </p>
       </div>
+      </Fade>
       <div className="container-2">
+      <Fade left>
         <h1 className="heading-2">Skills</h1>
         <h2>HTML5</h2>
         <div className="box1">
           <div className="box1-1">HTML5</div>
         </div>
+        </Fade>
+        <Fade right>
         <h2>CSS3</h2>
         <div className="box1">
           <div className="box1-2">CSS3</div>
         </div>
+        </Fade>
+        <Fade left> 
         <h2>JavaScript</h2>
         <div className="box1">
           <div className="box1-3">JavaScript</div>
         </div>
+        </Fade>
+        <Fade right> 
         <h2>ReactJs</h2>
         <div className="box1">
           <div className="box1-4">ReactJs</div>
         </div>
+        </Fade>
+        <Fade left> 
         <h2>NodeJs</h2>
         <div className="box1">
           <div className="box1-5">NodeJs</div>
         </div>
+        </Fade>
       </div>
     </Container>
   );
