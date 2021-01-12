@@ -6,7 +6,7 @@ const Skills = () => {
     <Container>
       <div className="container-1">
         <h1 className="heading-1">Education</h1>
-        <p className="paragraph1">
+        <p>
           The bachelor`s degree in Business administration at Sejong University
           in Seoul, South Korea
         </p>
@@ -17,7 +17,7 @@ const Skills = () => {
         <div className="box1">
           <div className="box1-1">HTML5</div>
         </div>
-        <h2>CSS</h2>
+        <h2>CSS3</h2>
         <div className="box1">
           <div className="box1-2">CSS3</div>
         </div>
@@ -57,6 +57,11 @@ const Container = styled.div`
     left: 80px;
     margin: 10px;
     padding: 20px;
+
+    p {
+      position: relative;
+      width: 100%;
+    }
     
     @media screen and (max-width: 728px) {
       position: static;
