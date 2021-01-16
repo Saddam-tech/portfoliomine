@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
+import EmailIcon from "@material-ui/icons/Email";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
@@ -41,14 +41,11 @@ const Header = () => {
                   }}
                 />
               </a>
-              <a
-                href="https://www.instagram.com/salokhiddeenov727/"
-                target="blank"
-              >
-                <InstagramIcon
+              <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
+                <EmailIcon
                   style={{
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                     color: "white",
                   }}
                 />
