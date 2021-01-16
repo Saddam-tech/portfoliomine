@@ -28,7 +28,7 @@ const About = () => {
           </Fade>
           <Fade right>
           <div className="icons">
-            <a href="https://mail.google.com/mail/u/0/#inbox" target="blank">
+            <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
               <EmailIcon
                 style={{
                   width: "30px",
@@ -105,6 +105,7 @@ const Container = styled.div`
 
     }
   }
+ 
 
   .content {
     display: flex; 

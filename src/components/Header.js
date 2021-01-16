@@ -148,7 +148,7 @@ const Container = styled.div`
     margin: 10px;
     padding: 10px;
     font-family: Optima, sans-serif;
-
+    
     @media screen and (max-width: 728px) {
       font-size: 40px;
       width: 100%;
