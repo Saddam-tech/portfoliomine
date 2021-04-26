@@ -1,50 +1,56 @@
 import React from "react";
 import styled from "styled-components";
-import {Fade} from 'react-reveal';
+import { Fade } from "react-reveal";
 
 const Skills = () => {
   return (
     <Container>
       <Fade right>
-      <div className="container-1">
-        <h1 className="heading-1">Education</h1>
-        <p>
-          The bachelor`s degree in Business administration at Sejong University
-          in Seoul, South Korea
-        </p>
-      </div>
+        <div className="container-1">
+          <h1 className="heading-1">Education</h1>
+          <p>
+            The bachelor`s degree in Business administration at Sejong
+            University in Seoul, South Korea
+          </p>
+        </div>
       </Fade>
       <div className="container-2">
-      <Fade left>
-        <h1 className="heading-2">Skills</h1>
-        <h2>HTML5</h2>
-        <div className="box1">
-          <div className="box1-1">HTML5</div>
-        </div>
+        <Fade left>
+          <h1 className="heading-2">Skills</h1>
+          <h2>HTML5</h2>
+          <div className="box1">
+            <div className="box1-1">HTML5</div>
+          </div>
         </Fade>
         <Fade right>
-        <h2>CSS3</h2>
-        <div className="box1">
-          <div className="box1-2">CSS3</div>
-        </div>
+          <h2>CSS3</h2>
+          <div className="box1">
+            <div className="box1-2">CSS3</div>
+          </div>
         </Fade>
-        <Fade left> 
-        <h2>JavaScript</h2>
-        <div className="box1">
-          <div className="box1-3">JavaScript</div>
-        </div>
+        <Fade left>
+          <h2>JavaScript</h2>
+          <div className="box1">
+            <div className="box1-3">JavaScript</div>
+          </div>
         </Fade>
-        <Fade right> 
-        <h2>ReactJs</h2>
-        <div className="box1">
-          <div className="box1-4">ReactJs</div>
-        </div>
+        <Fade right>
+          <h2>ReactJs | Hooks | Redux </h2>
+          <div className="box1">
+            <div className="box1-4">ReactJs</div>
+          </div>
         </Fade>
-        <Fade left> 
-        <h2>NodeJs</h2>
-        <div className="box1">
-          <div className="box1-5">NodeJs</div>
-        </div>
+        <Fade left>
+          <h2>NodeJs</h2>
+          <div className="box1">
+            <div className="box1-5">NodeJs</div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>Git</h2>
+          <div className="box1">
+            <div className="box1-6">Git</div>
+          </div>
         </Fade>
       </div>
     </Container>
@@ -75,7 +81,7 @@ const Container = styled.div`
       position: relative;
       width: 100%;
     }
-    
+
     @media screen and (max-width: 728px) {
       position: static;
       font-size: 17px;
@@ -85,8 +91,6 @@ const Container = styled.div`
     }
   }
 
-  
-
   .container-2 {
     display: flex;
     flex-direction: column;
@@ -95,7 +99,7 @@ const Container = styled.div`
     position: relative;
     left: 80px;
     margin-bottom: 70px;
-    
+
     @media screen and (max-width: 728px) {
       position: static;
       font-size: 17px;
@@ -131,6 +135,10 @@ const Container = styled.div`
     width: 93%;
   }
   .box1-5 {
+    background: black;
+    width: 50%;
+  }
+  .box1-6 {
     background: black;
     width: 90%;
   }

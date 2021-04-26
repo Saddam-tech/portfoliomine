@@ -8,7 +8,6 @@ import { Link as Scroll } from "react-scroll";
 import { Fade } from "react-reveal";
 import Navbar from "./Navbar";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import Background from "../assets/tree.jpeg";
 
 const Header = () => {
   return (
@@ -91,7 +90,6 @@ const Header = () => {
 };
 
 export default Header;
-
 const Container = styled.div`
  display: flex;
  height: 100vh;
@@ -104,7 +102,6 @@ const Container = styled.div`
  background-color: #2C3D55;
 
  @media screen and (max-width: 728px) {
-   background: url(${Background});
    background-attachment: fixed; 
  }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
- 
 
 const Certificates = (props) => {
   return (
@@ -8,9 +7,12 @@ const Certificates = (props) => {
       <div className="container">
         <h1>{props.title}</h1>
         <h3>{props.content}</h3>
-        <img src="./videos/myDiploma.jpg" alt="diploma" className="image" />
+        {props.src === "react" ? (
+          <img src="./videos/myDiploma.jpg" alt="diploma" className="image" />
+        ) : (
+          <img src="./videos/javascript.jpeg" alt="diploma" className="image" />
+        )}
       </div>
-       
     </Container>
   );
 };
@@ -20,7 +22,6 @@ export default Certificates;
 const Container = styled.div`
   display: flex;
   width: 20%;
-  height: 40%;
   align-items: center;
   justify-content: center;
   margin: 30px;

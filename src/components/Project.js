@@ -5,10 +5,22 @@ const Project = (props) => {
   return (
     <Container>
       <div className="container">
-        <h3>{props.title}</h3>
-        <h4>{props.description}</h4>
         <a href={props.link} target="blank">
-          <img src="./videos/skynet.png" alt="pic" className="image" />
+          <h3>{props.title}</h3>
+          <h4>{props.description}</h4>
+          {props.src === 0 ? (
+            <img src="./videos/skynet.png" alt="pic" className="image" />
+          ) : null}
+          {props.src === 1 ? (
+            <img src="./videos/notesApp.png" alt="pic" className="image" />
+          ) : null}
+          {props.src === 2 ? (
+            <img src="./videos/quizApp.png" alt="pic" className="image" />
+          ) : null}
+          {props.src === 3 ? (
+            <img src="./videos/countdown.png" alt="pic" className="image" />
+          ) : null}
+          {/* <img src="./videos/skynet.png" alt="pic" className="image" /> */}
         </a>
       </div>
     </Container>
@@ -19,8 +31,7 @@ export default Project;
 
 const Container = styled.div`
   display: flex;
-  width: 20%;
-  height: 40%;
+  width: 15%;
   align-items: center;
   justify-content: center;
   margin: 30px;
@@ -51,11 +62,22 @@ const Container = styled.div`
       color: black;
     }
   }
+  a:link {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+  }
 
   .image {
     width: 100%;
     height: 50%;
-    position: relative;  
+    position: relative;
     box-shadow: 9px 9px 9px #000000;
   }
 `;

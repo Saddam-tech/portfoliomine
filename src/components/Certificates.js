@@ -3,42 +3,47 @@ import styled from "styled-components";
 import Background from "../assets/lights2.jpg";
 import Certificate from "./Certificate";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
-import { Link as Scroll } from "react-scroll"; 
+import { Link as Scroll } from "react-scroll";
 
 const Certificates = () => {
   const [certificates] = useState([
     {
-      title: "My background",
+      title: "ReactJs certificate",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.",
+        "Successfully completed 40.5 total hours of React - The Complete Guide (incl Hooks, React Router, Redux) online course on Nov. 18, 2020",
+      type: "react",
+    },
+    {
+      title: "JavaScript certificate",
+      content:
+        "Successfully completed 68.5 total hours of The Complete JavaScript Course 2021 online course on March 29, 2021",
+      type: "javascript",
     },
   ]);
 
-  const certificate = certificates.map((certificate) => (
-    <Certificate title={certificate.title} content={certificate.content} />
-  ));
-
   return (
     <Container id="testimonial">
-      {certificate.map((certificate) => (
-        <Fragment>
+      <Fragment>
         <div className="container">
-          {certificate}
-          {certificate}
-          {certificate}
-          {certificate}
-          {certificate}
-          {certificate}
+          {certificates.map((certificate) => (
+            <Fragment>
+              <Certificate
+                title={certificate.title}
+                content={certificate.content}
+                src={certificate.type}
+              />
+            </Fragment>
+          ))}
         </div>
+
         <div className="icon-container">
-        <Scroll to="header" smooth={true} duration={1000} spy={true}>
-          <ArrowDropDownCircleIcon
-            style={{ fontSize: "50px", color: "white" }}
-          />
-        </Scroll>
-      </div>
+          <Scroll to="header" smooth={true} duration={1000} spy={true}>
+            <ArrowDropDownCircleIcon
+              style={{ fontSize: "50px", color: "white" }}
+            />
+          </Scroll>
+        </div>
       </Fragment>
-      ))}
     </Container>
   );
 };
@@ -47,7 +52,8 @@ export default Certificates;
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
   background-image: url(${Background});
