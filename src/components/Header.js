@@ -14,7 +14,6 @@ const Header = () => {
   return (
     <Container id="header">
       <Navbar />
-      <video src="./videos/video-11.mp4" autoPlay loop muted />
       <div className="container">
         <Fade bottom>
           <img src="./videos/avatar.svg" className="pic" alt="pic" />
@@ -102,6 +101,7 @@ const Container = styled.div`
  object-fit: contain; 
  background-size: cover; 
  background-position: center;
+ background-color: #2C3D55;
 
  @media screen and (max-width: 728px) {
    background: url(${Background});
