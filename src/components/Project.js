@@ -22,13 +22,22 @@ const Project = (props) => {
           ) : null}
           { props.src === 4 ? (
             <video
-              src="./videos/newsfeed.mp4"
+              src="./videos/forkify.mp4"
               className="image"
               autoPlay
               muted
               loop="true"
             />
           ) : null}
+          { props.src === 5 ? (
+            <video
+              src="./videos/newsfeed.mp4"
+              className="image"
+              autoPlay
+              muted
+              loop="true"
+            />
+          ) : null} 
         </a>
       </div>
     </Container>
