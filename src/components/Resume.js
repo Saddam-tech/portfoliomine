@@ -84,15 +84,15 @@ const Resume = () => {
             src={3}
           />
           <Project
-            title={projects[4].newsfeed.title}
-            description={projects[4].newsfeed.description}
-            link={projects[4].newsfeed.link}
+            title={projects[4].forkifymine.title}
+            description={projects[4].forkifymine.description}
+            link={projects[4].forkifymine.link}
             src={4}
           />
           <Project
-            title={projects[5].forkifymine.title}
-            description={projects[5].forkifymine.description}
-            link={projects[5].forkifymine.link}
+            title={projects[5].newsfeed.title}
+            description={projects[5].newsfeed.description}
+            link={projects[5].newsfeed.link}
             src={5}
           />
         </div>
