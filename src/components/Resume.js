@@ -48,7 +48,7 @@ const Resume = () => {
         title: "NewsFeed App",
         description:
           "News website that feeds the latest news from a real-time API",
-        link: "https://nwsfeed.netlify.app/",
+        link: "https://newsfeed.netlify.app/",
       },
     },
   ]);
