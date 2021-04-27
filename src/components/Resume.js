@@ -43,6 +43,14 @@ const Resume = () => {
         link: "https://forkifymine.netlify.app/",
       },
     },
+    {
+      newsfeed: {
+        title: "NewsFeed App",
+        description:
+          "News website that feeds the latest news from a real-time API",
+        link: "https://nwsfeed.netlify.app/",
+      },
+    },
   ]);
 
   console.log(projects);
@@ -76,10 +84,16 @@ const Resume = () => {
             src={3}
           />
           <Project
-            title={projects[4].forkifymine.title}
-            description={projects[4].forkifymine.description}
-            link={projects[4].forkifymine.link}
+            title={projects[4].newsfeed.title}
+            description={projects[4].newsfeed.description}
+            link={projects[4].newsfeed.link}
             src={4}
+          />
+          <Project
+            title={projects[5].forkifymine.title}
+            description={projects[5].forkifymine.description}
+            link={projects[5].forkifymine.link}
+            src={5}
           />
         </div>
       </Fade>
