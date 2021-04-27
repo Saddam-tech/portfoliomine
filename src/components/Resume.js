@@ -35,15 +35,16 @@ const Resume = () => {
         link: "https://countdowntillwinter.netlify.app/",
       },
     },
+     {
+      forkifymine: {
+        title: "Forkify App",
+        description:
+          "Food search and recipe finder website that uses real-time API to fetch data from",
+        link: "https://forkifymine.netlify.app/",
+      },
+    },
   ]);
 
-  // const project = projects.map((project) => (
-  //   <Project
-  //     title={project.skynet.title}
-  //     description={project.skynet.description}
-  //     link={project.skynet.link}
-  //   />
-  // ));
   console.log(projects);
 
   return (
@@ -73,6 +74,12 @@ const Resume = () => {
             description={projects[3].countDown.description}
             link={projects[3].countDown.link}
             src={3}
+          />
+          <Project
+            title={projects[4].forkifymine.title}
+            description={projects[4].forkifymine.description}
+            link={projects[4].forkifymine.link}
+            src={4}
           />
         </div>
       </Fade>
