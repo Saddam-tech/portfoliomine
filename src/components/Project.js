@@ -20,7 +20,15 @@ const Project = (props) => {
           {props.src === 3 ? (
             <img src="./videos/countdown.png" alt="pic" className="image" />
           ) : null}
-          {/* <img src="./videos/skynet.png" alt="pic" className="image" /> */}
+          { props.src === 4 ? (
+            <video
+              src="./videos/newsfeed.mp4"
+              className="image"
+              autoPlay
+              muted
+              loop="true"
+            />
+          ) : null}
         </a>
       </div>
     </Container>
