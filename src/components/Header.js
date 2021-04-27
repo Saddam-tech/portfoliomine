@@ -22,7 +22,7 @@ const Header = () => {
             <h1>
               Hi, I am Saddam
               <br />
-              a Full Stack
+              a Front-end
               <br />
               Web developer
             </h1>
