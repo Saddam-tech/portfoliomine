@@ -25,7 +25,7 @@ const About = () => {
           <h1 className="heading2">Contact details</h1>
           <p>Saddam Salokhiddinov</p>
           <p>From Uzbekistan, living in Seoul, South Korea</p>
-          <p>Phone number: {\n} 010 5672 2707 </p>
+          <p>Phone number: {"\n"} 010 5672 2707 </p>
           </Fade>
           <Fade right>
           <div className="icons">
