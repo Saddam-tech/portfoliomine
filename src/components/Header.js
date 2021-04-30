@@ -20,7 +20,7 @@ const Header = () => {
         <div className="text">
           <Fade bottom>
             <h1>
-              Hi, I am Saddam
+              Hi, I am Sam
               <br />
               a Front-end
               <br />
