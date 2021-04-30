@@ -15,7 +15,7 @@ const About = () => {
          <Fade right>
            <h1 className="heading1">About me</h1>
           <p>
-            I am Saddam Salokhiddinov and I am a 3rd year student at Sejong
+            My name is Saddam (people call me Sam) and I am a 3rd year student at Sejong
             university in Seoul and a software engineer with hands-on experience
             mostly in web development and have a really good background on
             back-end tools like NodeJs, ExpressJs and MongoDB
@@ -25,6 +25,8 @@ const About = () => {
           <h1 className="heading2">Contact details</h1>
           <p>Saddam Salokhiddinov</p>
           <p>From Uzbekistan, living in Seoul, South Korea</p>
+          <p>Phone number:
+              010 5672 2707 </p>
           </Fade>
           <Fade right>
           <div className="icons">
