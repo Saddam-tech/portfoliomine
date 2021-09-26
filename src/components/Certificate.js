@@ -11,7 +11,7 @@ const Certificates = (props) => {
           {props.jpg ? (
             <img
               src={props.jpg}
-              style={{ height: "330px" }}
+              style={{ height: "330px", width: "290px" }}
               alt="diploma"
               className="image"
             />
