@@ -1,9 +1,9 @@
 import React, { useState, Fragment } from "react";
+
 import styled from "styled-components";
 import Background from "../assets/lights2.jpg";
 import Certificate from "./Certificate";
-import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
-import { Link as Scroll } from "react-scroll";
+import Footer from "./Footer";
 
 const Certificates = () => {
   const [certificates] = useState([
@@ -23,27 +23,19 @@ const Certificates = () => {
 
   return (
     <Container id="testimonial">
-      <Fragment>
-        <div className="container">
-          {certificates.map((certificate) => (
-            <Fragment>
-              <Certificate
-                title={certificate.title}
-                content={certificate.content}
-                src={certificate.type}
-              />
-            </Fragment>
-          ))}
-        </div>
-
-        <div className="icon-container">
-          <Scroll to="header" smooth={true} duration={1000} spy={true}>
-            <ArrowDropDownCircleIcon
-              style={{ fontSize: "50px", color: "white" }}
+      <div className="container">
+        {certificates.map((certificate) => (
+          <Fragment>
+            <Certificate
+              title={certificate.title}
+              content={certificate.content}
+              src={certificate.type}
             />
-          </Scroll>
-        </div>
-      </Fragment>
+          </Fragment>
+        ))}
+      </div>
+
+      <Footer />
     </Container>
   );
 };

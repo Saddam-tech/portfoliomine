@@ -5,29 +5,33 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import EmailIcon from "@material-ui/icons/Email";
-import {Fade} from 'react-reveal';
+import { Fade } from "react-reveal";
 
 const About = () => {
   return (
-    <Container id="about"> 
+    <Container id="about">
       <div className="container">
         <div className="content">
-         <Fade right>
-           <h1 className="heading1">About me</h1>
-          <p>
-            My name is Saddam (people call me Sam) and I am a 3rd year student at Sejong
-            university in Seoul and a software engineer with hands-on experience
-            mostly in web development and have a really good background on
-            back-end tools like NodeJs, ExpressJs and MongoDB
-          </p>
-          </Fade>
-          <Fade left> 
-          <h1 className="heading2">Contact details</h1>
-          <p>Saddam Salokhiddinov</p>
-          <p>From Uzbekistan, living in Seoul, South Korea</p>
-          <p>Phone number: 010 5672 2707</p>
-          </Fade>
           <Fade right>
+            <h1 className="heading1">About me</h1>
+            <p>
+              My name is Saddam (people call me Sam) and I am a senior student
+              at Sejong university in Seoul and a software engineer with
+              hands-on experience mostly in web development and have a really
+              good background on modern web development tools like React +
+              TypeScript, NextJs and MongoDB
+            </p>
+          </Fade>
+          <Fade left>
+            <h1 className="heading2">Contact details</h1>
+            <div className="contact-details">
+              <p>Saddam Salokhiddinov</p>
+              <p>From Uzbekistan, living in Seoul, South Korea</p>
+              <a href="tel://+01058071727">Phone number: 010 5807 1707</a>
+            </div>
+          </Fade>
+        </div>
+        <Fade right>
           <div className="icons">
             <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
               <EmailIcon
@@ -73,9 +77,8 @@ const About = () => {
               />
             </a>
           </div>
-          </Fade>
-        </div>
-      </div> 
+        </Fade>
+      </div>
       <Skills />
     </Container>
   );
@@ -96,8 +99,8 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content; center;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 40%;
     margin: 70px;
 
     @media screen and (max-width: 728px) {
@@ -111,7 +114,7 @@ const Container = styled.div`
   .content {
     display: flex; 
     justify-content: center;
-    align-items: center;
+    text-align: center;
     flex-direction: column; 
     width: 100%; 
     margin-left: 20px;
@@ -125,14 +128,17 @@ const Container = styled.div`
     }
     
   }
- 
 
-  p {
-    width: 40%;
-    @media screen and (max-width: 728px) {
-      width: 100%;
-    }
 
+  }
+
+  .contact-details {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  a { 
+    color: #000;
   }
  
   .icons {
@@ -141,12 +147,6 @@ const Container = styled.div`
     justify-content: space-between;
     color: #ffffff;
     cursor: pointer; 
-    width: 30%;
-    padding: 20px;
-
-    @media screen and (max-width: 728px) {
-      width: 80%;
-    }
-     
+    width: 80%;
   }
 `;

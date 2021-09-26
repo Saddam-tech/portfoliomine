@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
-import About from "./components/About";
-import Resume from "./components/Resume";
-import Certificates from "./components/Certificates";
+import Container from "./components/Container";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -10,15 +8,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 0);
   }, []);
 
   return !loading ? (
-    <div className="App">
+    <div>
       <Header />
-      <About />
-      <Resume />
-      <Certificates />
+      <Container />
     </div>
   ) : (
     <p

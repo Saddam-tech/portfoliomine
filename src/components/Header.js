@@ -24,8 +24,8 @@ const Header = () => {
               <br />
               a Front-end
               <br />
-              Web developer
             </h1>
+            <h1 className="h1-web">Web developer</h1>
           </Fade>
 
           <Fade bottom>
@@ -42,8 +42,8 @@ const Header = () => {
               <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
                 <EmailIcon
                   style={{
-                    width: "30px",
-                    height: "30px",
+                    width: "40px",
+                    height: "40px",
                     color: "white",
                   }}
                 />
@@ -100,6 +100,7 @@ const Container = styled.div`
  background-size: cover; 
  background-position: center;
  background-color: #2C3D55;
+ margin: 0;
 
  @media screen and (max-width: 728px) {
    background-attachment: fixed; 
@@ -115,9 +116,7 @@ const Container = styled.div`
     height: 80%;
 
     @media screen and (max-width: 728px) {
-      margin-left: 20px;
       flex-direction: column;
-      width: 80%;
     }
   }
 
@@ -131,34 +130,40 @@ const Container = styled.div`
 
     @media screen and (max-width: 728px) {
       width: 100%;
-      margin-top: 10px;
-      margin-left: 45px;
     }
   }
 
   h1 {
     color: #ffffff;
-    font-size: 80px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 6rem;
     font-family: Optima, sans-serif;
+    margin: 0;
     
     @media screen and (max-width: 728px) {
-      font-size: 40px;
-      width: 100%;
+      font-size: 3rem;
+      margin: 10px 10px 0 60px;
+    }
+  }
+
+  .h1-web {
+    font-family: Optima, sans-serif;
+    font-size: 6rem;
+    margin: 0 0 120px -40px;
+
+    @media screen and (max-width: 728px) {
+      font-size: 3rem;
+      margin: 0 10px 50px 40px;
     }
   }
 
   .pic {
     width: 35%;
     height: 70%;
-    margin-left: 100px;
-    padding: 20px;
+    margin: 0 10px 0 150px;
     @media screen and (max-width: 728px) {
+      margin: 20px 20px;
       width: 90%;
       height: 40%;
-      margin-left: 45px;
-      padding: 20px;
     }
   }
 
@@ -171,7 +176,7 @@ const Container = styled.div`
     padding: 10px;
 
     @media screen and (max-width: 728px) {
-      margin-left: 30px;
+      margin-left: 40px;
       width: 80%;
     }
   }

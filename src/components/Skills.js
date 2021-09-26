@@ -29,27 +29,33 @@ const Skills = () => {
           </div>
         </Fade>
         <Fade left>
-          <h2>JavaScript</h2>
+          <h2>JavaScript ES5+</h2>
           <div className="box1">
             <div className="box1-3">JavaScript</div>
           </div>
         </Fade>
         <Fade right>
-          <h2>ReactJs | Hooks | Redux </h2>
+          <h2>ReactJs | Hooks | Redux | Context API </h2>
           <div className="box1">
             <div className="box1-4">ReactJs</div>
           </div>
         </Fade>
         <Fade left>
-          <h2>NodeJs</h2>
+          <h2>TypeScript</h2>
           <div className="box1">
-            <div className="box1-5">NodeJs</div>
+            <div className="box1-5">TypeScript</div>
           </div>
         </Fade>
         <Fade right>
+          <h2>NextJs</h2>
+          <div className="box1">
+            <div className="box1-6">NextJs</div>
+          </div>
+        </Fade>
+        <Fade left>
           <h2>Git</h2>
           <div className="box1">
-            <div className="box1-6">Git</div>
+            <div className="box1-7">Git</div>
           </div>
         </Fade>
       </div>
@@ -136,9 +142,13 @@ const Container = styled.div`
   }
   .box1-5 {
     background: black;
-    width: 50%;
+    width: 90%;
   }
   .box1-6 {
+    background: black;
+    width: 90%;
+  }
+  .box1-7 {
     background: black;
     width: 90%;
   }

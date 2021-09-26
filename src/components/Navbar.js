@@ -69,7 +69,7 @@ const Body = styled.div`
   align-items: center;
   width: 100%;
   z-index: 1;
-  position: sticky;
+  position: fixed;
   top: 0;
 
   @media screen and (max-width: 728px) {

@@ -8,9 +8,19 @@ const Certificates = (props) => {
         <h1>{props.title}</h1>
         <h3>{props.content}</h3>
         {props.src === "react" ? (
-          <img src="./videos/myDiploma.jpg" alt="diploma" className="image" />
+          <a href="./videos/myDiploma.jpg" download>
+            <img src="./videos/myDiploma.jpg" alt="diploma" className="image" />{" "}
+            <p>Press to download</p>
+          </a>
         ) : (
-          <img src="./videos/javascript.jpeg" alt="diploma" className="image" />
+          <a href="./videos/javascript.jpeg" download>
+            <img
+              src="./videos/javascript.jpeg"
+              alt="diploma"
+              className="image"
+            />
+            <p>Press to download</p>
+          </a>
         )}
       </div>
     </Container>
@@ -58,5 +68,16 @@ const Container = styled.div`
     height: 50%;
     position: relative;
     box-shadow: 9px 9px 9px #000000;
+  }
+
+  a {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #000;
   }
 `;
