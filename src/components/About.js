@@ -27,7 +27,7 @@ const About = () => {
             <div className="contact-details">
               <p>Saddam Salokhiddinov</p>
               <p>From Uzbekistan, living in Seoul, South Korea</p>
-              <a href="tel://+01058071727">Phone number: 010 5807 1707</a>
+              <a href="tel://01058071727">Phone number: 010 5807 1727</a>
             </div>
           </Fade>
         </div>

@@ -9,6 +9,9 @@ import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
 
 const Footer = () => {
+  const date = new Date().getFullYear();
+  console.log(date);
+
   return (
     <React.Fragment>
       <Container>
@@ -19,18 +22,20 @@ const Footer = () => {
               <a href="https://github.com/Saddam-tech" target="blank">
                 <GitHubIcon
                   style={{
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
               <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
                 <EmailIcon
                   style={{
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
@@ -41,9 +46,10 @@ const Footer = () => {
                 {" "}
                 <FacebookIcon
                   style={{
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
@@ -54,18 +60,20 @@ const Footer = () => {
                 {" "}
                 <LinkedInIcon
                   style={{
-                    width: "40px",
-                    height: "40px",
+                    width: "30px",
+                    height: "30px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
             </div>
           </Fade>
+          <div className="copyright">Copyright © {date} SaddamTech Inc.</div>
           <div className="icon-container">
             <Scroll to="header" smooth={true} duration={1000} spy={true}>
               <ArrowDropDownCircleIcon
-                style={{ fontSize: "50px", color: "white" }}
+                style={{ fontSize: "50px", color: "white", opacity: "0.2" }}
               />
             </Scroll>
           </div>
@@ -82,5 +90,25 @@ const Container = styled.div`
   background: #011627;
   width: 100%;
   color: #fff;
-  font-family: Optima, sans-serif;
+  font-family: Courier New, monospace;
+  text-align: center;
+
+  div {
+    width: 100%;
+    margin: auto;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 50px;
+    width: 50%;
+    align-items: center;
+  }
+
+  .copyright {
+    opacity: 0.8;
+    margin-bottom: 50px;
+  }
 `;

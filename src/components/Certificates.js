@@ -12,12 +12,21 @@ const Certificates = () => {
       content:
         "Successfully completed 40.5 total hours of React - The Complete Guide (incl Hooks, React Router, Redux) online course on Nov. 18, 2020",
       type: "react",
+      path: "./videos/Saddam-reactjs-certificate.jpeg",
     },
     {
       title: "JavaScript certificate",
       content:
         "Successfully completed 68.5 total hours of The Complete JavaScript Course 2021 online course on March 29, 2021",
       type: "javascript",
+      path: "./videos/javascript.jpeg",
+    },
+    {
+      title: "My resume",
+      content: null,
+      type: "resume",
+      jpg: "./videos/Sam-resume-jpg.jpg",
+      path: "./videos/Sam-resume.pdf",
     },
   ]);
 
@@ -30,6 +39,8 @@ const Certificates = () => {
               title={certificate.title}
               content={certificate.content}
               src={certificate.type}
+              path={certificate.path}
+              jpg={certificate.jpg}
             />
           </Fragment>
         ))}

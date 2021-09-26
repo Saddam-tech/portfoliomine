@@ -16,7 +16,7 @@ const Skills = () => {
       </Fade>
       <div className="container-2">
         <Fade left>
-          <h1 className="heading-2">Skills</h1>
+          <h1 className="heading-2">My Stack:</h1>
           <h2>HTML5</h2>
           <div className="box1">
             <div className="box1-1">HTML5</div>

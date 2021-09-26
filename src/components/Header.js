@@ -24,8 +24,8 @@ const Header = () => {
               <br />
               a Front-end
               <br />
+              Web Developer
             </h1>
-            <h1 className="h1-web">Web developer</h1>
           </Fade>
 
           <Fade bottom>
@@ -36,6 +36,7 @@ const Header = () => {
                     width: "40px",
                     height: "40px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
@@ -45,6 +46,7 @@ const Header = () => {
                     width: "40px",
                     height: "40px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
@@ -58,6 +60,7 @@ const Header = () => {
                     width: "40px",
                     height: "40px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
@@ -71,6 +74,7 @@ const Header = () => {
                     width: "40px",
                     height: "40px",
                     color: "white",
+                    opacity: "0.5",
                   }}
                 />
               </a>
@@ -81,7 +85,9 @@ const Header = () => {
       <Fade bottom>
         <div className="icon2">
           <Scroll to="about" smooth={true} duration={1000} spy={true}>
-            <ArrowDropDownCircleIcon style={{ fontSize: "50px" }} />
+            <ArrowDropDownCircleIcon
+              style={{ fontSize: "50px", opacity: "0.4" }}
+            />
           </Scroll>
         </div>
       </Fade>
@@ -122,37 +128,27 @@ const Container = styled.div`
 
   .text {
     display: flex; 
-    width: 45%;
+    width: 50%;
     height: 50%;
-    padding: 10px;
     flex-direction: column;
-    margin-right: 10px;
+    text-align: center;
+    opacity: 0.9;
 
     @media screen and (max-width: 728px) {
       width: 100%;
+      margin: auto;
     }
   }
 
   h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 6rem;
     font-family: Optima, sans-serif;
-    margin: 0;
+    margin: auto;
+     
     
     @media screen and (max-width: 728px) {
       font-size: 3rem;
-      margin: 10px 10px 0 60px;
-    }
-  }
-
-  .h1-web {
-    font-family: Optima, sans-serif;
-    font-size: 6rem;
-    margin: 0 0 120px -40px;
-
-    @media screen and (max-width: 728px) {
-      font-size: 3rem;
-      margin: 0 10px 50px 40px;
     }
   }
 
@@ -161,7 +157,7 @@ const Container = styled.div`
     height: 70%;
     margin: 0 10px 0 150px;
     @media screen and (max-width: 728px) {
-      margin: 20px 20px;
+      margin: 60px 20px 20px;
       width: 90%;
       height: 40%;
     }
@@ -172,11 +168,13 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 50%;
-    margin-left: 50px;
+    margin: auto;
+    margin-top: 60px;
     padding: 10px;
+     
 
     @media screen and (max-width: 728px) {
-      margin-left: 40px;
+      margin-left: 30px;
       width: 80%;
     }
   }

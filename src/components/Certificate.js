@@ -7,21 +7,19 @@ const Certificates = (props) => {
       <div className="container">
         <h1>{props.title}</h1>
         <h3>{props.content}</h3>
-        {props.src === "react" ? (
-          <a href="./videos/myDiploma.jpg" download>
-            <img src="./videos/myDiploma.jpg" alt="diploma" className="image" />{" "}
-            <p>Press to download</p>
-          </a>
-        ) : (
-          <a href="./videos/javascript.jpeg" download>
+        <a href={props.path} download>
+          {props.jpg ? (
             <img
-              src="./videos/javascript.jpeg"
+              src={props.jpg}
+              style={{ height: "330px" }}
               alt="diploma"
               className="image"
             />
-            <p>Press to download</p>
-          </a>
-        )}
+          ) : (
+            <img src={props.path} alt="diploma" className="image" />
+          )}
+          <p>Press to download</p>
+        </a>
       </div>
     </Container>
   );
