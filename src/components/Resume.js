@@ -7,49 +7,53 @@ import { Fade } from "react-reveal";
 const Resume = () => {
   const [projects] = useState([
     {
-      skynet: {
-        title: "SkynetCloud",
-        description: "this website is a simple cloud for storing your notes",
-        link: "https://skynetcloud.netlify.app/",
-      },
+      title: "SkynetCloud",
+      description: "this website is a simple cloud for storing your notes",
+      link: "https://skynetcloud.netlify.app/",
+      src: "./videos/skynet.png",
     },
     {
-      notesApp: {
-        title: "Notes App",
-        description: "simple CRUD web app for writing and storing notes",
-        link: "https://notesappmine.netlify.app/",
-      },
+      title: "Notes App",
+      description: "simple CRUD web app for writing and storing notes",
+      link: "https://notesappmine.netlify.app/",
+      src: "./videos/notesApp.png",
     },
     {
-      quizApp: {
-        title: "Quiz App",
-        description: "simple quiz app",
-        link: "https://quizappmine.netlify.app/",
-      },
+      title: "Quiz App",
+      description: "simple quiz app",
+      link: "https://quizappmine.netlify.app/",
+      src: "./videos/quizApp.png",
     },
     {
-      countDown: {
-        title: "Countdown Timer",
-        description:
-          "a web app that counts days, hours, minutes and seconds left till certain date",
-        link: "https://countdowntillwinter.netlify.app/",
-      },
-    },
-     {
-      forkifymine: {
-        title: "Forkify App",
-        description:
-          "Food search and recipe finder website that uses real-time API to fetch data from",
-        link: "https://forkifymine.netlify.app/",
-      },
+      title: "Countdown Timer",
+      description:
+        "a web app that counts days, hours, minutes and seconds left till certain date",
+      link: "https://countdowntillwinter.netlify.app/",
+      src: "./videos/countdown.png",
     },
     {
-      newsfeed: {
-        title: "NewsFeed App",
-        description:
-          "News website that feeds the latest news from a real-time API",
-        link: "https://newsfeed.netlify.app/",
-      },
+      title: "Forkify App",
+      description:
+        "Food search and recipe finder website that uses real-time API to fetch data from",
+      link: "https://forkifymine.netlify.app/",
+      src: "./videos/forkify.mp4",
+      video: true,
+    },
+    {
+      title: "NewsFeed App",
+      description:
+        "News website that feeds the latest news from a real-time API",
+      link: "https://newsfeed.netlify.app/",
+      src: "./videos/newsfeed.mp4",
+      video: true,
+    },
+    {
+      title: "Instagram-web-app Clone",
+      description: "I tried to clone instagram web app",
+      link:
+        "https://l.instagram.com/?u=https%3A%2F%2Finstagram-clone-683d4.web.app%2F&e=ATN5aytk1vdqeNqsH8axV3wpJ0VQZR-BpuaQNY5LwAg_7CanxHOIvmRC9-B_JqNldImUhWAQbT-xsyLjTcOMbw&s=1",
+      src:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png",
     },
   ]);
 
@@ -59,42 +63,15 @@ const Resume = () => {
     <Container id="resume">
       <Fade>
         <div className="container">
-          <Project
-            title={projects[0].skynet.title}
-            description={projects[0].skynet.description}
-            link={projects[0].skynet.link}
-            src={0}
-          />
-          <Project
-            title={projects[1].notesApp.title}
-            description={projects[1].notesApp.description}
-            link={projects[1].notesApp.link}
-            src={1}
-          />
-          <Project
-            title={projects[2].quizApp.title}
-            description={projects[2].quizApp.description}
-            link={projects[2].quizApp.link}
-            src={2}
-          />
-          <Project
-            title={projects[3].countDown.title}
-            description={projects[3].countDown.description}
-            link={projects[3].countDown.link}
-            src={3}
-          />
-          <Project
-            title={projects[4].forkifymine.title}
-            description={projects[4].forkifymine.description}
-            link={projects[4].forkifymine.link}
-            src={4}
-          />
-          <Project
-            title={projects[5].newsfeed.title}
-            description={projects[5].newsfeed.description}
-            link={projects[5].newsfeed.link}
-            src={5}
-          />
+          {projects.map((item) => (
+            <Project
+              title={item.title}
+              description={item.description}
+              link={item.link}
+              src={item.src}
+              video={item.video}
+            />
+          ))}
         </div>
       </Fade>
     </Container>
@@ -132,3 +109,40 @@ const Container = styled.div`
     justify-content: center;
   }
 `;
+
+// <Project
+// title={projects[0].skynet.title}
+// description={projects[0].skynet.description}
+// link={projects[0].skynet.link}
+// src={0}
+// />
+// <Project
+// title={projects[1].notesApp.title}
+// description={projects[1].notesApp.description}
+// link={projects[1].notesApp.link}
+// src={1}
+// />
+// <Project
+// title={projects[2].quizApp.title}
+// description={projects[2].quizApp.description}
+// link={projects[2].quizApp.link}
+// src={2}
+// />
+// <Project
+// title={projects[3].countDown.title}
+// description={projects[3].countDown.description}
+// link={projects[3].countDown.link}
+// src={3}
+// />
+// <Project
+// title={projects[4].forkifymine.title}
+// description={projects[4].forkifymine.description}
+// link={projects[4].forkifymine.link}
+// src={4}
+// />
+// <Project
+// title={projects[5].newsfeed.title}
+// description={projects[5].newsfeed.description}
+// link={projects[5].newsfeed.link}
+// src={5}
+// />

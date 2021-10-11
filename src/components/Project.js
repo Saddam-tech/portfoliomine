@@ -1,43 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const Project = (props) => {
+const Project = ({ link, title, description, src, video }) => {
   return (
     <Container>
       <div className="container">
-        <a href={props.link} target="blank">
-          <h3>{props.title}</h3>
-          <h4>{props.description}</h4>
-          {props.src === 0 ? (
-            <img src="./videos/skynet.png" alt="pic" className="image" />
-          ) : null}
-          {props.src === 1 ? (
-            <img src="./videos/notesApp.png" alt="pic" className="image" />
-          ) : null}
-          {props.src === 2 ? (
-            <img src="./videos/quizApp.png" alt="pic" className="image" />
-          ) : null}
-          {props.src === 3 ? (
-            <img src="./videos/countdown.png" alt="pic" className="image" />
-          ) : null}
-          { props.src === 4 ? (
-            <video
-              src="./videos/forkify.mp4"
-              className="image"
-              autoPlay
-              muted
-              loop="true"
-            />
-          ) : null}
-          { props.src === 5 ? (
-            <video
-              src="./videos/newsfeed.mp4"
-              className="image"
-              autoPlay
-              muted
-              loop="true"
-            />
-          ) : null} 
+        <a href={link} target="blank">
+          <h3>{title}</h3>
+          <h4>{description}</h4>
+          {video ? (
+            <video src={src} className="image" autoPlay muted loop="true" />
+          ) : (
+            <img src={src} alt="pictures" className="image" />
+          )}
         </a>
       </div>
     </Container>
