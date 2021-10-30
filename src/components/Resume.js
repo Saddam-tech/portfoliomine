@@ -50,10 +50,8 @@ const Resume = () => {
     {
       title: "Instagram-web-app Clone",
       description: "I tried to clone instagram web app",
-      link:
-        "https://l.instagram.com/?u=https%3A%2F%2Finstagram-clone-683d4.web.app%2F&e=ATN5aytk1vdqeNqsH8axV3wpJ0VQZR-BpuaQNY5LwAg_7CanxHOIvmRC9-B_JqNldImUhWAQbT-xsyLjTcOMbw&s=1",
-      src:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png",
+      link: "instagram-clone-683d4.web.app",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png",
     },
   ]);
 
