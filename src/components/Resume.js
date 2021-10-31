@@ -7,24 +7,28 @@ import { Fade } from "react-reveal";
 const Resume = () => {
   const [projects] = useState([
     {
+      id: 1,
       title: "SkynetCloud",
       description: "this website is a simple cloud for storing your notes",
       link: "https://skynetcloud.netlify.app/",
       src: "./videos/skynet.png",
     },
     {
+      id: 2,
       title: "Notes App",
       description: "simple CRUD web app for writing and storing notes",
       link: "https://notesappmine.netlify.app/",
       src: "./videos/notesApp.png",
     },
     {
+      id: 3,
       title: "Quiz App",
       description: "simple quiz app",
       link: "https://quizappmine.netlify.app/",
       src: "./videos/quizApp.png",
     },
     {
+      id: 4,
       title: "Countdown Timer",
       description:
         "a web app that counts days, hours, minutes and seconds left till certain date",
@@ -32,6 +36,7 @@ const Resume = () => {
       src: "./videos/countdown.png",
     },
     {
+      id: 5,
       title: "Forkify App",
       description:
         "Food search and recipe finder website that uses real-time API to fetch data from",
@@ -40,6 +45,7 @@ const Resume = () => {
       video: true,
     },
     {
+      id: 6,
       title: "NewsFeed App",
       description:
         "News website that feeds the latest news from a real-time API",
@@ -48,9 +54,10 @@ const Resume = () => {
       video: true,
     },
     {
+      id: 7,
       title: "Instagram-web-app Clone",
       description: "I tried to clone instagram web app",
-      link: "instagram-clone-683d4.web.app",
+      link: "https://instagram-clone-683d4.web.app/",
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png",
     },
   ]);
@@ -63,6 +70,7 @@ const Resume = () => {
         <div className="container">
           {projects.map((item) => (
             <Project
+              key={item.id}
               title={item.title}
               description={item.description}
               link={item.link}

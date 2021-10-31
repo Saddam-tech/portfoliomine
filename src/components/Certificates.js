@@ -8,6 +8,7 @@ import Footer from "./Footer";
 const Certificates = () => {
   const [certificates] = useState([
     {
+      id: 1,
       title: "ReactJs certificate",
       content:
         "Successfully completed 40.5 total hours of React - The Complete Guide (incl Hooks, React Router, Redux) online course on Nov. 18, 2020",
@@ -15,6 +16,7 @@ const Certificates = () => {
       path: "./videos/Saddam-reactjs-certificate.jpeg",
     },
     {
+      id: 2,
       title: "JavaScript certificate",
       content:
         "Successfully completed 68.5 total hours of The Complete JavaScript Course 2021 online course on March 29, 2021",
@@ -22,6 +24,7 @@ const Certificates = () => {
       path: "./videos/javascript.jpeg",
     },
     {
+      id: 3,
       title: "My resume",
       content: null,
       type: "resume",
@@ -36,6 +39,7 @@ const Certificates = () => {
         {certificates.map((certificate) => (
           <Fragment>
             <Certificate
+              key={certificate.id}
               title={certificate.title}
               content={certificate.content}
               src={certificate.type}
