@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Container from "./components/Container";
-import BgAnimation from "./components/BackgroundAnimation";
 
 function App() {
   const [loading, setLoading] = useState(true);
