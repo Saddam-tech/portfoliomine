@@ -19,43 +19,43 @@ const Skills = () => {
           <h1 className="heading-2">My Stack:</h1>
           <h2>HTML5</h2>
           <div className="box1">
-            <div className="box1-1">HTML5</div>
+            <div className="box1-1">.</div>
           </div>
         </Fade>
         <Fade right>
           <h2>CSS3</h2>
           <div className="box1">
-            <div className="box1-2">CSS3</div>
+            <div className="box1-2">.</div>
           </div>
         </Fade>
         <Fade left>
           <h2>JavaScript ES5+</h2>
           <div className="box1">
-            <div className="box1-3">JavaScript</div>
+            <div className="box1-3">.</div>
           </div>
         </Fade>
         <Fade right>
           <h2>ReactJs | Hooks | Redux | Context API </h2>
           <div className="box1">
-            <div className="box1-4">ReactJs</div>
+            <div className="box1-4">.</div>
           </div>
         </Fade>
         <Fade left>
           <h2>TypeScript</h2>
           <div className="box1">
-            <div className="box1-5">TypeScript</div>
+            <div className="box1-5">.</div>
           </div>
         </Fade>
         <Fade right>
           <h2>NextJs</h2>
           <div className="box1">
-            <div className="box1-6">NextJs</div>
+            <div className="box1-6">.</div>
           </div>
         </Fade>
         <Fade left>
           <h2>Git</h2>
           <div className="box1">
-            <div className="box1-7">Git</div>
+            <div className="box1-7">.</div>
           </div>
         </Fade>
       </div>
@@ -72,6 +72,7 @@ const Container = styled.div`
   height: 100%;
   flex-direction: column;
   align-items: center;
+  background-color: #0f1624;
 
   .container-1 {
     display: flex;
@@ -127,29 +128,36 @@ const Container = styled.div`
   .box1-1 {
     background: black;
     width: 97%;
+    color: #000;.
   }
   .box1-2 {
     background: black;
     width: 90%;
+    color: #000;.
   }
   .box1-3 {
     background: black;
     width: 90%;
+    color: #000;.
   }
   .box1-4 {
     background: black;
     width: 93%;
+    color: #000;.
   }
   .box1-5 {
     background: black;
     width: 90%;
+    color: #000;.
   }
   .box1-6 {
     background: black;
     width: 90%;
+    color: #000;.
   }
   .box1-7 {
     background: black;
     width: 90%;
+    color: #000;.
   }
 `;

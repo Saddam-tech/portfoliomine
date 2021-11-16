@@ -105,7 +105,7 @@ const Container = styled.div`
  object-fit: contain; 
  background-size: cover; 
  background-position: center;
- background-color: #2C3D55;
+ background-color: #0f1624;
  margin: 0;
 
  @media screen and (max-width: 728px) {
@@ -141,7 +141,7 @@ const Container = styled.div`
   }
 
   h1 {
-    color: #fff;
+    color:#EDEEEF;
     font-size: 6rem;
     font-family: Optima, sans-serif;
     margin: auto;

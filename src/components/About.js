@@ -38,7 +38,7 @@ const About = () => {
                 style={{
                   width: "30px",
                   height: "30px",
-                  color: "white",
+                  color: "#E4E4E6",
                 }}
               />
             </a>
@@ -47,7 +47,7 @@ const About = () => {
                 style={{
                   width: "30px",
                   height: "30px",
-                  color: "white",
+                  color: "#E4E4E6",
                 }}
               />
             </a>
@@ -59,7 +59,7 @@ const About = () => {
                 style={{
                   width: "30px",
                   height: "30px",
-                  color: "white",
+                  color: "#E4E4E6",
                 }}
               />
             </a>
@@ -72,7 +72,7 @@ const About = () => {
                 style={{
                   width: "30px",
                   height: "30px",
-                  color: "white",
+                  color: "#E4E4E6",
                 }}
               />
             </a>
@@ -92,8 +92,9 @@ const Container = styled.div`
   justify-content: center; 
   height: 100%;
   width: 100%;
-  background-color: #585563;
+  background-color: #0F1624;
   flex-direction: column; 
+  color: #E4E4E6;
  
   .container {
     display: flex;
@@ -138,14 +139,14 @@ const Container = styled.div`
   }
 
   a { 
-    color: #000;
+    color: #E4E4E6;
   }
  
   .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #ffffff;
+    color: #E4E4E6;
     cursor: pointer; 
     width: 80%;
   }
