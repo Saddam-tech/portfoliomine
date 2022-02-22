@@ -29,7 +29,7 @@ const Skills = () => {
           </div>
         </Fade>
         <Fade left>
-          <h2>JavaScript ES5+</h2>
+          <h2>JavaScript ES6+</h2>
           <div className="box1">
             <div className="box1-3">.</div>
           </div>
@@ -56,6 +56,30 @@ const Skills = () => {
           <h2>Git</h2>
           <div className="box1">
             <div className="box1-7">.</div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>VueJs</h2>
+          <div className="box1">
+            <div className="box1-8">.</div>
+          </div>
+        </Fade>
+        <Fade left>
+          <h2>Quasar(VueJs framework)</h2>
+          <div className="box1">
+            <div className="box1-9">.</div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>NuxtJs</h2>
+          <div className="box1">
+            <div className="box1-10">.</div>
+          </div>
+        </Fade>
+        <Fade left>
+          <h2>Socket.io</h2>
+          <div className="box1">
+            <div className="box1-11">.</div>
           </div>
         </Fade>
       </div>
@@ -158,6 +182,26 @@ const Container = styled.div`
   .box1-7 {
     background: black;
     width: 90%;
+    color: #000;.
+  }
+  .box1-8 {
+    background: black;
+    width: 93%;
+    color: #000;.
+  }
+  .box1-9 {
+    background: black;
+    width: 92%;
+    color: #000;.
+  }
+  .box1-10 {
+    background: black;
+    width: 94%;
+    color: #000;.
+  }
+  .box1-11 {
+    background: black;
+    width: 95%;
     color: #000;.
   }
 `;

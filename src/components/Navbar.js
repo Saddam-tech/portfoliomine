@@ -106,6 +106,31 @@ const Body = styled.div`
       opacity: 1;
     }
   }
+  li {
+    display: inline-block;
+    position: relative;
+    padding: 16px;
+    font-size: 18px;
+  }
+  li:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  li:hover {
+    transition: 0.25s;
+  }
 
   .link {
     font-family: Optima, sans-serif;
@@ -115,11 +140,5 @@ const Body = styled.div`
     color: white;
     padding: 10px;
     border-radius: 5px;
-
-    :hover {
-      background: rgba(55, 105, 202, 0.14);
-      color: gray;
-      transition: 0.5;
-    }
   }
 `;

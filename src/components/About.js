@@ -19,7 +19,19 @@ const About = () => {
               at Sejong university in Seoul and a software engineer with
               hands-on experience mostly in web development and have a really
               good background on modern web development tools like React +
-              TypeScript, NextJs and MongoDB
+              TypeScript and NextJs.
+            </p>
+
+            <h1>Employment History</h1>
+            <h2>@Team CredIT</h2>
+            <a href="https://teamcredit.kr/">
+              <p>teamcredit.kr</p>
+            </a>
+            <p>
+              Finished 4 month internship and managed front-end development of
+              the company`s leading projects. Have been working with the
+              back-end engineering team and developing complex systems using
+              variety of modern software
             </p>
           </Fade>
           <Fade left>
