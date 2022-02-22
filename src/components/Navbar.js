@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Fade } from "react-reveal";
-//import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 const Navbar = () => {
   return (

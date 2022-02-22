@@ -29,14 +29,14 @@ const Certificates = () => {
       content: null,
       type: "resume",
       jpg: "./videos/Sam-resume-jpg.jpg",
-      path: "./videos/Sam-resume.pdf",
+      path: "./videos/resume-sam.pdf",
     },
   ]);
 
   return (
     <Container id="testimonial">
       <div className="container">
-        {certificates.map((certificate) => (
+        {certificates.map(certificate => (
           <Fragment>
             <Certificate
               key={certificate.id}

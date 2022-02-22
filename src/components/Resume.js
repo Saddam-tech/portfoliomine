@@ -8,27 +8,43 @@ const Resume = () => {
   const [projects] = useState([
     {
       id: 1,
+      title: "Espotworld",
+      description:
+        "[made by CredIT] One of the websites where I made a huge contribution to the development of the game side, UI and websocket communication with the backend",
+      link: "https://espotworld.com/",
+      src: "./videos/espot.png",
+    },
+    {
+      id: 2,
+      title: "[made by CredIT] Korowd.com",
+      description:
+        "Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
+      link: "https://korowd.com/",
+      src: "./videos/korowd.png",
+    },
+    {
+      id: 3,
       title: "SkynetCloud",
       description: "this website is a simple cloud for storing your notes",
       link: "https://skynetcloud.netlify.app/",
       src: "./videos/skynet.png",
     },
     {
-      id: 2,
+      id: 4,
       title: "Notes App",
       description: "simple CRUD web app for writing and storing notes",
       link: "https://notesappmine.netlify.app/",
       src: "./videos/notesApp.png",
     },
     {
-      id: 3,
+      id: 5,
       title: "Quiz App",
       description: "simple quiz app",
       link: "https://quizappmine.netlify.app/",
       src: "./videos/quizApp.png",
     },
     {
-      id: 4,
+      id: 6,
       title: "Countdown Timer",
       description:
         "a web app that counts days, hours, minutes and seconds left till certain date",
@@ -36,7 +52,7 @@ const Resume = () => {
       src: "./videos/countdown.png",
     },
     {
-      id: 5,
+      id: 7,
       title: "Forkify App",
       description:
         "Food search and recipe finder website that uses real-time API to fetch data from",
@@ -45,7 +61,7 @@ const Resume = () => {
       video: true,
     },
     {
-      id: 6,
+      id: 8,
       title: "NewsFeed App",
       description:
         "News website that feeds the latest news from a real-time API",
@@ -54,7 +70,7 @@ const Resume = () => {
       video: true,
     },
     {
-      id: 7,
+      id: 9,
       title: "Instagram-web-app Clone",
       description: "I tried to clone instagram web app",
       link: "https://instagram-clone-683d4.web.app/",
@@ -62,13 +78,11 @@ const Resume = () => {
     },
   ]);
 
-  console.log(projects);
-
   return (
     <Container id="resume">
       <Fade>
         <div className="container">
-          {projects.map((item) => (
+          {projects.map(item => (
             <Project
               key={item.id}
               title={item.title}
