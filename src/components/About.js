@@ -28,10 +28,10 @@ const About = () => {
               <p>teamcredit.kr</p>
             </a>
             <p>
-              Finished 4 month internship and managed front-end development of
-              the company`s leading projects. Have been working with the
-              back-end engineering team and developing complex systems using
-              variety of modern software
+              Finished 4 month internship (2021.11.01 ~ 2022.03.01) and managed
+              front-end development of the company`s leading projects. Have been
+              working with the back-end engineering team and developing complex
+              systems using variety of modern software
             </p>
           </Fade>
           <Fade left>

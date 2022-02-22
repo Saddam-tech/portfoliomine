@@ -49,7 +49,7 @@ const Navbar = () => {
                 spy={true}
                 className="link"
               >
-                Testimonial
+                More
               </Scroll>
             </li>
           </ul>
@@ -140,5 +140,11 @@ const Body = styled.div`
     color: white;
     padding: 10px;
     border-radius: 5px;
+  }
+
+  @media screen and (max-width: 728px) {
+    li {
+      left: -20px;
+    }
   }
 `;
