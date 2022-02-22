@@ -143,7 +143,8 @@ const Body = styled.div`
 
   @media screen and (max-width: 728px) {
     li {
-      left: -20px;
+      margin: 0;
+      padding: 5px;
     }
   }
 `;
