@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Certificates = (props) => {
+const Certificates = props => {
   return (
     <Container>
       <div className="container">
@@ -18,7 +18,7 @@ const Certificates = (props) => {
           ) : (
             <img src={props.path} alt="diploma" className="image" />
           )}
-          <p>Press to download</p>
+          <p>Click to download</p>
         </a>
       </div>
     </Container>

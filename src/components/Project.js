@@ -14,6 +14,7 @@ const Project = ({ link, title, description, src, video }) => {
             <img src={src} alt="pictures" className="image" />
           )}
         </a>
+        <p>Click to go to the website</p>
       </div>
     </Container>
   );
