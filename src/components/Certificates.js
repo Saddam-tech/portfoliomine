@@ -37,16 +37,14 @@ const Certificates = () => {
     <Container id="testimonial">
       <div className="container">
         {certificates.map(certificate => (
-          <Fragment>
-            <Certificate
-              key={certificate.id}
-              title={certificate.title}
-              content={certificate.content}
-              src={certificate.type}
-              path={certificate.path}
-              jpg={certificate.jpg}
-            />
-          </Fragment>
+          <Certificate
+            key={certificate.id}
+            title={certificate.title}
+            content={certificate.content}
+            src={certificate.type}
+            path={certificate.path}
+            jpg={certificate.jpg}
+          />
         ))}
       </div>
 

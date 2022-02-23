@@ -9,7 +9,7 @@ const Project = ({ link, title, description, src, video }) => {
           <h3>{title}</h3>
           <h4>{description}</h4>
           {video ? (
-            <video src={src} className="image" autoPlay muted loop="true" />
+            <video src={src} className="image" autoPlay muted loop />
           ) : (
             <img src={src} alt="pictures" className="image" />
           )}
