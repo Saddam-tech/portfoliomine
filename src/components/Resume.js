@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Project from "./Project";
 import Background from "../assets/background.jpeg";
-import { Fade } from "react-reveal";
 
 const Resume = () => {
   const [projects] = useState([
@@ -80,20 +79,18 @@ const Resume = () => {
 
   return (
     <Container id="resume">
-      <Fade>
-        <div className="container">
-          {projects.map(item => (
-            <Project
-              key={item.id}
-              title={item.title}
-              description={item.description}
-              link={item.link}
-              src={item.src}
-              video={item.video}
-            />
-          ))}
-        </div>
-      </Fade>
+      <div className="container">
+        {projects.map(item => (
+          <Project
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            link={item.link}
+            src={item.src}
+            video={item.video}
+          />
+        ))}
+      </div>
     </Container>
   );
 };
