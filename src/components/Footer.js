@@ -67,7 +67,9 @@ const Footer = () => {
             </a>
           </div>
         </Fade>
-        <div className="copyright">Copyright © {date} SaddamTech Inc.</div>
+        <div className="copyright">
+          Copyright © {date} SaddamTech Inc. All Rights Reserved.
+        </div>
         <div className="icon-container">
           <Scroll to="header" smooth={true} duration={1000} spy={true}>
             <ArrowDropDownCircleIcon
