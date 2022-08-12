@@ -15,11 +15,10 @@ const About = () => {
           <Fade right>
             <h1 className="heading1">About me</h1>
             <p>
-              My name is Saddam (people call me Sam) and I am a senior student
-              at Sejong university in Seoul and a software engineer with
-              hands-on experience mostly in web development and have a really
-              good background on modern web development tools like React +
-              TypeScript and NextJs.
+              I turn coffee into code... My name is Saddam (people call me Sam)
+              and I am a graduate from Sejong university in Seoul and a software
+              engineer with a great experience in web development and have a
+              really good background on modern web development tools.
             </p>
 
             <h1>Employment History</h1>
@@ -32,6 +31,18 @@ const About = () => {
               front-end development of the company`s leading projects. Have been
               working with the back-end engineering team and developing complex
               systems using variety of modern software
+            </p>
+
+            <h2>@Team Chainlabs</h2>
+            <a href="https://chainlabs.one/">
+              <p>chainlabs.one</p>
+            </a>
+            <p>
+              Handled backend development + front end of the company`s leading
+              projects. Got to learn solidity and solidity development tools for
+              blockchain interaction. Sending tokens, managing smart contracts,
+              connecting different wallets to the website and talking to
+              blockchain networks.
             </p>
           </Fade>
           <Fade left>

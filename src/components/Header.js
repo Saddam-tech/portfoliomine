@@ -20,11 +20,13 @@ const Header = () => {
         <div className="text">
           <Fade bottom>
             <h1>
-              Hi, I am Sam
+              Hi I am Sam,
               <br />
-              a Front-end
+              FullStack Web
               <br />
-              Web Developer
+              &&
+              <br />
+              Mobile Dev
             </h1>
           </Fade>
 
