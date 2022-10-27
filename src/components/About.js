@@ -126,6 +126,37 @@ const Container = styled.div`
     flex-direction: column;
     width: 40%;
     margin: 70px;
+    .heading1 {
+      font-weight: 800;
+      background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+    h1 {
+      font-weight: 800;
+      background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      font-weight: 800;
+      background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
 
     @media screen and (max-width: 728px) {
       flex-direction: column;
@@ -144,6 +175,7 @@ const Container = styled.div`
     margin-left: 20px;
     padding: 50px;
     font-size: 20px;
+    font-family: Space Grotesk, sans-serif;
 
     @media screen and (max-width: 728px) {
       margin: 0;

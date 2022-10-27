@@ -205,13 +205,13 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%; 
-    
+     
      
     button {
       border: none;
       cursor: pointer;
       text-align: center;
-      background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+      background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
       border-radius: 50px;
       width: 230px;
       height: 50px;
@@ -220,6 +220,10 @@ const Container = styled.div`
       font-size: 18px;
       font-weight: 800;
       font-family: Space Grotesk, sans-serif;
+      transition: 0.4s ease;
+    }
+    button:hover {
+      background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
     }
   }
   
