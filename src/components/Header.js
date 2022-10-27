@@ -8,6 +8,7 @@ import { Link as Scroll } from "react-scroll";
 import { Fade } from "react-reveal";
 import Navbar from "./Navbar";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import BackgroundAnimation from "./BgAnimation";
 
 const Header = () => {
   return (
@@ -15,21 +16,21 @@ const Header = () => {
       <Navbar />
       <div className="container">
         <Fade bottom>
-          <img src="./videos/avatar.svg" className="pic" alt="pic" />
+          <img src="./videos/avatar.png" className="pic" alt="pic" />
+          <div className="bg-animation">
+            <BackgroundAnimation />
+          </div>
         </Fade>
         <div className="text">
           <Fade bottom>
             <h1>
               Hi I am Sam,
               <br />
-              FullStack Web
-              <br />
-              &&
+              FullStack Web &&
               <br />
               Mobile Dev
             </h1>
           </Fade>
-
           <Fade bottom>
             <div className="icons">
               <a href="https://github.com/Saddam-tech" target="blank">
@@ -37,7 +38,7 @@ const Header = () => {
                   style={{
                     width: "40px",
                     height: "40px",
-                    color: "white",
+                    color: "rgba(255, 255, 255, 0.5)",
                     opacity: "0.5",
                   }}
                 />
@@ -47,7 +48,7 @@ const Header = () => {
                   style={{
                     width: "40px",
                     height: "40px",
-                    color: "white",
+                    color: "rgba(255, 255, 255, 0.5)",
                     opacity: "0.5",
                   }}
                 />
@@ -61,7 +62,7 @@ const Header = () => {
                   style={{
                     width: "40px",
                     height: "40px",
-                    color: "white",
+                    color: "rgba(255, 255, 255, 0.5)",
                     opacity: "0.5",
                   }}
                 />
@@ -75,21 +76,20 @@ const Header = () => {
                   style={{
                     width: "40px",
                     height: "40px",
-                    color: "white",
+                    color: "rgba(255, 255, 255, 0.5)",
                     opacity: "0.5",
                   }}
                 />
               </a>
             </div>
           </Fade>
+          {/* <BackgroundAnimation /> */}
         </div>
       </div>
       <Fade bottom>
         <div className="icon2">
           <Scroll to="about" smooth={true} duration={1000} spy={true}>
-            <ArrowDropDownCircleIcon
-              style={{ fontSize: "50px", opacity: "0.4" }}
-            />
+            <button>Learn More</button>
           </Scroll>
         </div>
       </Fade>
@@ -142,26 +142,45 @@ const Container = styled.div`
     }
   }
 
+  .bg-animation {
+    width: 42%;
+    position: absolute;
+    right: 90px;
+    top: 60px;
+
+    @media screen and (max-width: 728px) {
+      width: 100%;
+      left: 2px;
+      top: 220px;
+    }
+  }
+
   h1 {
-    color:#EDEEEF;
+    font-family: Space Grotesk, sans-serif;
     font-size: 6rem;
-    font-family: Optima, sans-serif;
+    font-weight: 800;
     margin: auto;
-     
+    background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+  );
+  width: max-content;
+  max-width: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     
     @media screen and (max-width: 728px) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 
   .pic {
-    width: 35%;
-    height: 70%;
-    margin: 0 10px 0 150px;
+    width: 550px;
+    margin: 0 5px 0 220px;
     @media screen and (max-width: 728px) {
       margin: 60px 20px 20px;
-      width: 90%;
-      height: 40%;
+      width: 40%;
     }
   }
 
@@ -185,10 +204,25 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    cursor: pointer; 
     width: 100%; 
+    
+     
+    button {
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+      border-radius: 50px;
+      width: 230px;
+      height: 50px;
+      line-height: 50px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 800;
+      font-family: Space Grotesk, sans-serif;
+    }
   }
+  
   video {
     object-fit: cover;
     width: 100%;

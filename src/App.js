@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import { GlobalStyles } from "./components/GlobalStyles";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -13,8 +14,8 @@ function App() {
 
   return !loading ? (
     <div>
+      <GlobalStyles />
       <Header />
-      {/* <BgAnimation /> */}
       <Container />
     </div>
   ) : (

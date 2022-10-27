@@ -75,7 +75,6 @@ const Body = styled.div`
     width: 0;
     margin: 0;
     padding: 0;
-    background: rgba(55, 105, 202, 0.14);
   }
 
   .navigation {
@@ -85,11 +84,10 @@ const Body = styled.div`
     list-style-type: none;
     width: 100%;
     height: 100%;
+  }
 
-    :hover {
-      background: rgba(55, 105, 202, 0.14);
-      transition: 0.5s ease;
-    }
+  .navigation:hover {
+    background: rgba(55, 105, 202, 0.14);
   }
 
   .ul {
@@ -101,9 +99,6 @@ const Body = styled.div`
     width: 40%;
     height: 30px;
     opacity: 0.6;
-    :hover {
-      opacity: 1;
-    }
   }
   li {
     display: inline-block;
@@ -129,10 +124,11 @@ const Body = styled.div`
   }
   li:hover {
     transition: 0.25s;
+    background: rgba(55, 105, 202, 0.14);
   }
 
   .link {
-    font-family: Optima, sans-serif;
+    font-family: Space Grotesk, sans-serif;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
