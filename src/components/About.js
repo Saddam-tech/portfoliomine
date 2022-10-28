@@ -12,6 +12,7 @@ const About = () => {
     <Container id="about">
       <div className="container">
         <div className="content">
+          <span className="border"></span>
           <Fade right>
             <h1 className="heading1">About me</h1>
             <p>
@@ -26,7 +27,7 @@ const About = () => {
               <p>teamcredit.kr</p>
             </a>
             <p>
-              Finished 4 month internship (2021.11.01 ~ 2022.03.01) and managed
+              (2021.11.01 ~ 2022.03.01) Finished 4 month internship and managed
               front-end development of the company`s leading projects. Have been
               working with the back-end engineering team and developing complex
               systems using variety of modern software
@@ -35,11 +36,11 @@ const About = () => {
               <p>chainlabs.one</p>
             </a>
             <p>
-              Handled backend development + front end of the company`s leading
-              projects. Got to learn solidity and solidity development tools for
-              blockchain interaction. Sending tokens, managing smart contracts,
-              connecting different wallets to the website and talking to
-              blockchain networks.
+              (2022.03.01 ~ now) Handling backend development + front end of the
+              company`s leading projects. Getting to learn solidity and solidity
+              development tools for blockchain interaction. Sending tokens,
+              managing smart contracts, connecting different wallets to the
+              website and talking to blockchain networks.
             </p>
           </Fade>
           <Fade left>
@@ -50,8 +51,10 @@ const About = () => {
               <a href="tel:01084103777">Phone number: 010 8410 3777</a>
             </div>
           </Fade>
+          <span className="border"></span>
         </div>
       </div>
+
       <Skills />
     </Container>
   );
@@ -68,6 +71,14 @@ const Container = styled.div`
   background-color: #0F1624;
   flex-direction: column; 
   color: #E4E4E6;
+
+  .border {
+    width: 80px;
+    height: 5px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+  }
  
   .container {
     display: flex;
@@ -162,14 +173,5 @@ const Container = styled.div`
     line-height: 40px;
     font-size: 24px;
     color: rgba(255, 255, 255, 0.5);
-  }
- 
-  .icons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #E4E4E6;
-    cursor: pointer; 
-    width: 80%;
   }
 `;

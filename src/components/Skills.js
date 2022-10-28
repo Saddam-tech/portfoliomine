@@ -19,73 +19,73 @@ const Skills = () => {
           <h1 className="heading-2">My Stack:</h1>
           <h2>HTML5</h2>
           <div className="box1">
-            <div className="box1-1">.</div>
+            <div className="box1-1"></div>
           </div>
         </Fade>
         <Fade right>
           <h2>CSS3</h2>
           <div className="box1">
-            <div className="box1-2">.</div>
+            <div className="box1-2"></div>
           </div>
         </Fade>
         <Fade left>
           <h2>JavaScript ES6+</h2>
           <div className="box1">
-            <div className="box1-3">.</div>
+            <div className="box1-3"></div>
           </div>
         </Fade>
         <Fade right>
           <h2>ExpressJs</h2>
           <div className="box1">
-            <div className="box1-4">.</div>
+            <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade right>
           <h2>ReactJs</h2>
           <div className="box1">
-            <div className="box1-4">.</div>
+            <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade left>
           <h2>TypeScript</h2>
           <div className="box1">
-            <div className="box1-5">.</div>
+            <div className="box1-5"></div>
           </div>
         </Fade>
         <Fade right>
           <h2>NextJs</h2>
           <div className="box1">
-            <div className="box1-6">.</div>
+            <div className="box1-6"></div>
           </div>
         </Fade>
         <Fade left>
           <h2>Git</h2>
           <div className="box1">
-            <div className="box1-7">.</div>
+            <div className="box1-7"></div>
           </div>
         </Fade>
         <Fade right>
           <h2>VueJs</h2>
           <div className="box1">
-            <div className="box1-8">.</div>
+            <div className="box1-8"></div>
           </div>
         </Fade>
         <Fade left>
           <h2>Quasar(VueJs framework)</h2>
           <div className="box1">
-            <div className="box1-9">.</div>
+            <div className="box1-9"></div>
           </div>
         </Fade>
         <Fade right>
           <h2>NuxtJs</h2>
           <div className="box1">
-            <div className="box1-10">.</div>
+            <div className="box1-10"></div>
           </div>
         </Fade>
         <Fade left>
           <h2>Socket.io</h2>
           <div className="box1">
-            <div className="box1-11">.</div>
+            <div className="box1-11"></div>
           </div>
         </Fade>
       </div>
@@ -114,9 +114,24 @@ const Container = styled.div`
     margin: 10px;
     padding: 20px;
 
+    .heading-1 {
+      font-weight: 800;
+      font-size: 65px;
+      background: linear-gradient(
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     p {
       position: relative;
       width: 100%;
+      line-height: 40px;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.5);
     }
 
     @media screen and (max-width: 728px) {
@@ -137,6 +152,23 @@ const Container = styled.div`
     left: 80px;
     margin-bottom: 70px;
 
+    .heading-2 {
+      font-weight: 800;
+      font-size: 65px;
+      background: linear-gradient(
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 800;
+    }
+
     @media screen and (max-width: 728px) {
       position: static;
       font-size: 17px;
@@ -153,61 +185,84 @@ const Container = styled.div`
     width: 100%;
     height: 100%;
     font-size: 40px;
+    border-radius: 50px;
   }
 
   .box1-1 {
     background: black;
     width: 97%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-2 {
     background: black;
     width: 90%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-3 {
     background: black;
     width: 90%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-4 {
     background: black;
     width: 93%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-5 {
     background: black;
     width: 90%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-6 {
     background: black;
     width: 90%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-7 {
     background: black;
     width: 90%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-8 {
     background: black;
     width: 93%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-9 {
     background: black;
     width: 92%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-10 {
     background: black;
     width: 94%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-11 {
     background: black;
     width: 95%;
-    color: #000;.
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
 `;
