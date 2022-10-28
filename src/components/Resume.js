@@ -43,6 +43,10 @@ const Resume = () => {
 
   return (
     <Container id="resume">
+      <div className="header">
+        <span className="border"></span>
+        <h1>Projects</h1>
+      </div>
       <div className="container">
         {projects.map((item) => (
           <Project
@@ -63,12 +67,43 @@ export default Resume;
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   background-color: #0f1624;
+  position: relative;
+
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 500px;
+    top: 0;
+
+    .border {
+      width: 80px;
+      height: 5px;
+      border-radius: 50px;
+      background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 65px;
+      background: linear-gradient(
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 
   .container {
     display: flex;
@@ -77,6 +112,7 @@ const Container = styled.div`
     width: 50%;
     height: 100%;
     flex-wrap: wrap;
+    margin-top: 170px;
   }
 
   .project {
