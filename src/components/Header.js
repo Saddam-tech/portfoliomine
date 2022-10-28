@@ -3,7 +3,6 @@ import styled from "styled-components";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
 import { Fade } from "react-reveal";
 import Navbar from "./Navbar";
@@ -17,10 +16,10 @@ const Header = () => {
       <div className="container">
         <Fade bottom>
           <img src="./videos/avatar.png" className="pic" alt="pic" />
-          <div className="bg-animation">
-            <BackgroundAnimation />
-          </div>
         </Fade>
+        <div className="bg-animation">
+          <BackgroundAnimation />
+        </div>
         <div className="text">
           <Fade bottom>
             <h1>
