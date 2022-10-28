@@ -150,6 +150,11 @@ const Container = styled.div`
       p {
         font-size: 20px;
       }
+
+      a {
+        font-size: 17px;
+      }
+      
     }
     
   }
