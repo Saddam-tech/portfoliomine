@@ -99,6 +99,11 @@ const Body = styled.div`
     width: 40%;
     height: 30px;
     opacity: 0.6;
+
+    @media screen and (max-width: 728px) {
+      margin: 0;
+      padding: 15px;
+    }
   }
   li {
     display: inline-block;
