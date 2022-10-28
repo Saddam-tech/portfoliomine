@@ -73,7 +73,12 @@ const Footer = () => {
         <div className="icon-container">
           <Scroll to="header" smooth={true} duration={1000} spy={true}>
             <ArrowDropDownCircleIcon
-              style={{ fontSize: "50px", color: "white", opacity: "0.2" }}
+              style={{
+                fontSize: "50px",
+                color: "white",
+                opacity: "0.2",
+                paddingBottom: "30px",
+              }}
             />
           </Scroll>
         </div>
@@ -86,10 +91,10 @@ export default Footer;
 
 const Container = styled.div`
   display: flex;
-  background: #011627;
+  background-color: #0f1624;
   width: 100%;
   color: #fff;
-  font-family: Courier New, monospace;
+  font-family: Space Grotesk, sans-serif;
   text-align: center;
 
   div {
@@ -109,5 +114,12 @@ const Container = styled.div`
   .copyright {
     opacity: 0.8;
     margin-bottom: 50px;
+    width: 80%;
+  }
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
   }
 `;

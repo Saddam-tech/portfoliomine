@@ -50,7 +50,7 @@ const Container = styled.div`
     flex-direction: column;
     color: white;
     width: 100%;
-    font-family: Optima, sans-serif;
+    font-family: Space Grotesk, sans-serif;
   }
 
   .image {

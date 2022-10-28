@@ -47,6 +47,10 @@ const Container = styled.div`
   height: 100%;
   background-color: #0f1624;
 
+  @media screen and (max-width: 728px) {
+    width: 100%;
+  }
+
   .container {
     display: flex;
     justify-content: space-around;

@@ -62,6 +62,9 @@ const Container = styled.div`
         background: #801414;
       }
     }
+    @media screen and (max-width: 728px) {
+      display: none;
+    }
   }
 
   a:link {
@@ -83,10 +86,13 @@ const Container = styled.div`
     text-align: justify;
   }
 
+  a {
+    width: 100%;
+  }
+
   .image {
     width: 100%;
     height: 250px;
     position: relative;
-    box-shadow: 9px 9px 9px #000000;
   }
 `;

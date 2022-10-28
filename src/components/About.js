@@ -10,7 +10,7 @@ const About = () => {
         <div className="content">
           <span className="border"></span>
           <Fade right>
-            <h1 className="heading1">About me</h1>
+            <h1>About me</h1>
             <p>
               I turn coffee into code... My name is Saddam (people call me Sam)
               and I am a graduate from Sejong university in Seoul and a software
@@ -83,45 +83,9 @@ const Container = styled.div`
     flex-direction: column;
     width: 40%;
     margin: 70px;
-    .heading1 {
-      font-weight: 800;
-      background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
+    
 
-    h1 {
-      font-weight: 800;
-      font-size: 65px;
-      background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      line-height: 40px;
-      font-size: 24px;
-      color: rgba(255, 255, 255, 0.5);
-    }
-    h2 {
-      font-weight: 800;
-      font-size: 32px;
-      background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
+    
 
     @media screen and (max-width: 728px) {
       flex-direction: column;
@@ -141,6 +105,31 @@ const Container = styled.div`
     font-size: 20px;
     font-family: Space Grotesk, sans-serif;
 
+    h1 {
+      font-weight: 800;
+      font-size: 65px;
+      background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+   
+    h2 {
+      font-weight: 800;
+      font-size: 32px;
+      background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.66) 60.15%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
     p {
       line-height: 40px;
       font-size: 24px;
@@ -151,6 +140,16 @@ const Container = styled.div`
       margin: 0;
       padding: 0; 
       font-size: 17px;
+
+      h1 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
     
   }

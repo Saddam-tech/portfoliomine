@@ -108,6 +108,13 @@ const Container = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    @media screen and (max-width: 728px) {
+      left: 20px;
+      h1 {
+        font-size: 34px;
+      }
+    }
   }
 
   .container {
@@ -117,7 +124,11 @@ const Container = styled.div`
     width: 50%;
     height: 100%;
     flex-wrap: wrap;
-    margin-top: 170px;
+    margin-top: 100px;
+
+    @media screen and (max-width: 728px) {
+      width: 100%;
+    }
   }
 
   .project {

@@ -139,7 +139,14 @@ const Container = styled.div`
       font-size: 17px;
       width: 90%;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+
+      .heading-1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 20px;
+      }
     }
   }
 
@@ -174,7 +181,14 @@ const Container = styled.div`
       font-size: 17px;
       width: 90%;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+
+      .heading-2 {
+        font-size: 24px;
+      }
+      h2 {
+        font-size: 20px;
+      }
     }
   }
 
