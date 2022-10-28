@@ -22,7 +22,6 @@ const About = () => {
             </p>
 
             <h1>Employment History</h1>
-            <h2>@Team CredIT</h2>
             <a href="https://teamcredit.kr/">
               <p>teamcredit.kr</p>
             </a>
@@ -32,8 +31,6 @@ const About = () => {
               working with the back-end engineering team and developing complex
               systems using variety of modern software
             </p>
-
-            <h2>@Team Chainlabs</h2>
             <a href="https://chainlabs.one/">
               <p>chainlabs.one</p>
             </a>
@@ -50,57 +47,10 @@ const About = () => {
             <div className="contact-details">
               <p>Saddam Salokhiddinov</p>
               <p>From Uzbekistan, living in Seoul, South Korea</p>
-              <a href="tel:01058071727">Phone number: 010 5807 1727</a>
+              <a href="tel:01084103777">Phone number: 010 8410 3777</a>
             </div>
           </Fade>
         </div>
-        <Fade right>
-          <div className="icons">
-            <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
-              <EmailIcon
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  color: "#E4E4E6",
-                }}
-              />
-            </a>
-            <a href="https://github.com/Saddam-tech" target="blank">
-              <GitHubIcon
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  color: "#E4E4E6",
-                }}
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/salokhiddeenov727/"
-              target="blank"
-            >
-              <InstagramIcon
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  color: "#E4E4E6",
-                }}
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/saddam.salokhiddinov"
-              target="blank"
-            >
-              {" "}
-              <FacebookIcon
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  color: "#E4E4E6",
-                }}
-              />
-            </a>
-          </div>
-        </Fade>
       </div>
       <Skills />
     </Container>
@@ -121,8 +71,8 @@ const Container = styled.div`
  
   .container {
     display: flex;
-    align-items: center;
-    justify-content; center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     width: 40%;
     margin: 70px;
@@ -139,6 +89,7 @@ const Container = styled.div`
 
     h1 {
       font-weight: 800;
+      font-size: 65px;
       background: linear-gradient(
     121.57deg,
     #ffffff 18.77%,
@@ -147,8 +98,15 @@ const Container = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
+
+    p {
+      line-height: 40px;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.5);
+    }
     h2 {
       font-weight: 800;
+      font-size: 32px;
       background: linear-gradient(
     121.57deg,
     #ffffff 18.77%,
@@ -168,14 +126,19 @@ const Container = styled.div`
 
   .content {
     display: flex; 
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
     flex-direction: column; 
     width: 100%; 
     margin-left: 20px;
     padding: 50px;
     font-size: 20px;
     font-family: Space Grotesk, sans-serif;
+
+    p {
+      line-height: 40px;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.5);
+    }
 
     @media screen and (max-width: 728px) {
       margin: 0;
@@ -189,12 +152,16 @@ const Container = styled.div`
   }
 
   .contact-details {
-    text-align: center;
     margin-bottom: 30px;
+    line-height: 40px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   a { 
-    color: #E4E4E6;
+    line-height: 40px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
   }
  
   .icons {
