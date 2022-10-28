@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Project from "./Project";
-import Background from "../assets/background.jpeg";
 
 const Resume = () => {
   const [projects] = useState([

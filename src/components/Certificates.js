@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import styled from "styled-components";
-import Background from "../assets/lights2.jpg";
 import Certificate from "./Certificate";
 import Footer from "./Footer";
 
