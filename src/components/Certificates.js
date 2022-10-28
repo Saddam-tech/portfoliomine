@@ -11,7 +11,7 @@ const Certificates = () => {
       title: "My resume",
       content: null,
       type: "resume",
-      jpg: "./videos/resume-picture.jpg",
+      jpg: "./videos/resume-picture.png",
       path: "./videos/resume-sam.pdf",
     },
   ]);
