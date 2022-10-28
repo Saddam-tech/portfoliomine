@@ -15,40 +15,11 @@ const Resume = () => {
     },
     {
       id: 2,
-      title: "[made by CredIT] Korowd.com",
+      title: "Korowd.com",
       description:
-        "Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
+        "[made by CredIT] Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
       link: "https://korowd.com/",
       src: "./videos/korowd.png",
-    },
-    {
-      id: 3,
-      title: "SkynetCloud",
-      description: "this website is a simple cloud for storing your notes",
-      link: "https://skynetcloud.netlify.app/",
-      src: "./videos/skynet.png",
-    },
-    {
-      id: 4,
-      title: "Notes App",
-      description: "simple CRUD web app for writing and storing notes",
-      link: "https://notesappmine.netlify.app/",
-      src: "./videos/notesApp.png",
-    },
-    {
-      id: 5,
-      title: "Quiz App",
-      description: "simple quiz app",
-      link: "https://quizappmine.netlify.app/",
-      src: "./videos/quizApp.png",
-    },
-    {
-      id: 6,
-      title: "Countdown Timer",
-      description:
-        "a web app that counts days, hours, minutes and seconds left till certain date",
-      link: "https://countdowntillwinter.netlify.app/",
-      src: "./videos/countdown.png",
     },
     {
       id: 7,
@@ -68,19 +39,12 @@ const Resume = () => {
       src: "./videos/newsfeed.mp4",
       video: true,
     },
-    {
-      id: 9,
-      title: "Instagram-web-app Clone",
-      description: "I tried to clone instagram web app",
-      link: "https://instagram-clone-683d4.web.app/",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png",
-    },
   ]);
 
   return (
     <Container id="resume">
       <div className="container">
-        {projects.map(item => (
+        {projects.map((item) => (
           <Project
             key={item.id}
             title={item.title}
@@ -100,25 +64,21 @@ export default Resume;
 const Container = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  background-image: url(${Background});
-  background-size: cover;
-  background-position: center;
-  object-fit: contain;
-  background-repeat: no-repeat;
+  background-color: #0f1624;
 
   .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
     flex-wrap: wrap;
   }
-  .cards {
-    display: ;
-  }
+
   .project {
     display: flex;
     flex-direction: row;

@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Skills from "./Skills";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import EmailIcon from "@material-ui/icons/Email";
 import { Fade } from "react-reveal";
 
 const About = () => {
