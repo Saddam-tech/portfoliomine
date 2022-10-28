@@ -12,6 +12,7 @@ const Resume = () => {
         "[made by CredIT] One of the websites where I made a huge contribution to the development of the game side, UI and websocket communication with the backend",
       link: "https://espotworld.com/",
       src: "./videos/espot.png",
+      gh: "https://github.com/Saddam-tech/classpot-front.git",
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ const Resume = () => {
         "[made by CredIT] Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
       link: "https://korowd.com/",
       src: "./videos/korowd.png",
+      gh: "https://github.com/teamcredit/korowd-front.git",
     },
     {
       id: 7,
@@ -28,6 +30,7 @@ const Resume = () => {
         "Food search and recipe finder website that uses real-time API to fetch data from",
       link: "https://forkifymine.netlify.app/",
       src: "./videos/forkify.mp4",
+      gh: "https://github.com/Saddam-tech/forkifymine.git",
       video: true,
     },
     {
@@ -37,6 +40,7 @@ const Resume = () => {
         "News website that feeds the latest news from a real-time API",
       link: "https://newsfeed.netlify.app/",
       src: "./videos/newsfeed.mp4",
+      gh: "https://github.com/Saddam-tech/newsFeed.com.git",
       video: true,
     },
   ]);
@@ -54,6 +58,7 @@ const Resume = () => {
             title={item.title}
             description={item.description}
             link={item.link}
+            gh={item.gh}
             src={item.src}
             video={item.video}
           />

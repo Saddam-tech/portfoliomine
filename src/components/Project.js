@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Project = ({ link, title, description, src, video }) => {
+const Project = ({ link, title, description, src, video, gh }) => {
   return (
     <Container>
       <a href={link} target="blank">
@@ -14,8 +14,8 @@ const Project = ({ link, title, description, src, video }) => {
         <h4>{description}</h4>
       </a>
       <div className="button-wrap">
-        <button>Code</button>
-        <button>Redirect Link</button>
+        <a href={gh}>Code</a>
+        <a href={link}>Redirect Link</a>
       </div>
     </Container>
   );
@@ -48,7 +48,7 @@ const Container = styled.div`
     bottom: 20px;
     width: 70%;
 
-    button {
+    a {
       color: #d4c0c0;
       font-size: 12px;
       padding: 10px 20px;

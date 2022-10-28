@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Certificates = props => {
+const Certificates = (props) => {
   return (
     <Container>
       <div className="container">
@@ -34,15 +34,10 @@ const Container = styled.div`
   justify-content: center;
   margin: 30px;
   padding: 30px;
-  border: 2px solid white;
-  border-radius: 0 100px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   cursor: pointer;
   transition: 0.5s ease-out;
-  :hover {
-    border-radius: 100px;
-    transition: 0.5s ease-in;
-    background: white;
-  }
 
   @media screen and (max-width: 728px) {
     width: 100%;
@@ -56,9 +51,6 @@ const Container = styled.div`
     color: white;
     width: 100%;
     font-family: Optima, sans-serif;
-    :hover {
-      color: black;
-    }
   }
 
   .image {
@@ -73,9 +65,26 @@ const Container = styled.div`
     width: 100%;
     text-align: center;
     text-decoration: none;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-  a:hover {
-    color: #000;
+    p {
+      color: #d4c0c0;
+      font-size: 12px;
+      padding: 10px 20px;
+      background: #6b3030;
+      margin-top: 50px;
+      border-radius: 15px;
+      font-weight: 600;
+      border: none;
+      width: 40%;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        background: #801414;
+      }
+    }
   }
 `;

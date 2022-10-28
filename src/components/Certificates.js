@@ -8,22 +8,6 @@ import Footer from "./Footer";
 const Certificates = () => {
   const [certificates] = useState([
     {
-      id: 1,
-      title: "ReactJs certificate",
-      content:
-        "Successfully completed 40.5 total hours of React - The Complete Guide (incl Hooks, React Router, Redux) online course on Nov. 18, 2020",
-      type: "react",
-      path: "./videos/Saddam-reactjs-certificate.jpeg",
-    },
-    {
-      id: 2,
-      title: "JavaScript certificate",
-      content:
-        "Successfully completed 68.5 total hours of The Complete JavaScript Course 2021 online course on March 29, 2021",
-      type: "javascript",
-      path: "./videos/javascript.jpeg",
-    },
-    {
       id: 3,
       title: "My resume",
       content: null,
@@ -36,7 +20,7 @@ const Certificates = () => {
   return (
     <Container id="testimonial">
       <div className="container">
-        {certificates.map(certificate => (
+        {certificates.map((certificate) => (
           <Certificate
             key={certificate.id}
             title={certificate.title}
@@ -61,10 +45,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  background-image: url(${Background});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #0f1624;
 
   .container {
     display: flex;
@@ -74,9 +55,7 @@ const Container = styled.div`
     height: 100%;
     flex-wrap: wrap;
   }
-  .cards {
-    display: ;
-  }
+
   .project {
     display: flex;
     flex-direction: row;
