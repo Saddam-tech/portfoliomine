@@ -57,6 +57,8 @@ const Container = styled.div`
       font-weight: 600;
       border: none;
       transition: 0.5s;
+      width: 80px;
+      text-align: center;
       cursor: pointer;
       &:hover {
         background: #801414;
