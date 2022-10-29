@@ -117,7 +117,6 @@ const Container = styled.div`
     height: 100%;
     position: relative;
     left: 80px;
-    margin: 10px;
     padding: 20px;
 
     .heading-1 {

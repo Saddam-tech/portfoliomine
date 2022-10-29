@@ -68,7 +68,8 @@ const Footer = () => {
           </div>
         </Fade>
         <div className="copyright">
-          Copyright © {date} SaddamTech Inc. All Rights Reserved.
+          Copyright © {date} SaddamTech Inc. <br />
+          All Rights Reserved.
         </div>
         <div className="icon-container">
           <Scroll to="header" smooth={true} duration={1000} spy={true}>
@@ -115,6 +116,7 @@ const Container = styled.div`
     opacity: 0.8;
     margin-bottom: 50px;
     width: 80%;
+    line-height: 24px;
   }
   .icon-container {
     display: flex;

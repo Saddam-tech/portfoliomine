@@ -78,6 +78,8 @@ const Container = styled.div`
   height: 100%;
   background-color: #0f1624;
   position: relative;
+  margin: 0;
+  padding: 0;
 
   .header {
     display: flex;
