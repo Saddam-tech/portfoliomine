@@ -41,6 +41,12 @@ const Skills = () => {
           </div>
         </Fade>
         <Fade right>
+          <h2>MySQL && (Sequalize)</h2>
+          <div className="box1">
+            <div className="box1-4"></div>
+          </div>
+        </Fade>
+        <Fade right>
           <h2>ReactJs</h2>
           <div className="box1">
             <div className="box1-4"></div>
