@@ -13,7 +13,15 @@ function App() {
   }, []);
 
   return !loading ? (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        overflowY: "hidden",
+      }}
+    >
       <GlobalStyles />
       <Header />
       <Container />

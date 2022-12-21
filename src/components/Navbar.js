@@ -108,7 +108,7 @@ const Body = styled.div`
   li {
     display: inline-block;
     position: relative;
-    padding: 16px;
+    /* padding: 16px; */
     font-size: 18px;
   }
   li:after {

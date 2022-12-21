@@ -109,7 +109,7 @@ const Container = styled.div`
  background-color: #0f1624;
  margin: 0;
 
- @media screen and (max-width: 728px) {
+ @media screen and (max-width: 1228px) {
    background-attachment: fixed; 
  }
 
@@ -122,7 +122,7 @@ const Container = styled.div`
     width: 100%;
     height: 80%;
 
-    @media screen and (max-width: 728px) {
+    @media screen and (max-width: 1228px) {
       flex-direction: column;
     }
   }
@@ -135,7 +135,7 @@ const Container = styled.div`
     text-align: center;
     opacity: 0.9;
 
-    @media screen and (max-width: 728px) {
+    @media screen and (max-width: 1228px) {
       width: 100%;
       margin: auto;
     }
@@ -147,7 +147,7 @@ const Container = styled.div`
     right: 90px;
     top: 60px;
 
-    @media screen and (max-width: 728px) {
+    @media screen and (max-width: 1228px) {
       width: 100%;
       left: 2px;
       top: 220px;
@@ -169,7 +169,7 @@ const Container = styled.div`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     
-    @media screen and (max-width: 728px) {
+    @media screen and (max-width: 1228px) {
       font-size: 2.5rem;
     }
   }
@@ -177,7 +177,7 @@ const Container = styled.div`
   .pic {
     width: 550px;
     margin: 0 5px 0 220px;
-    @media screen and (max-width: 728px) {
+    @media screen and (max-width: 1228px) {
       margin: 60px 20px 20px;
       width: 40%;
     }
@@ -193,8 +193,7 @@ const Container = styled.div`
     padding: 10px;
      
 
-    @media screen and (max-width: 728px) {
-      margin-left: 30px;
+    @media screen and (max-width: 1228px) {
       width: 80%;
     }
   }
@@ -232,7 +231,7 @@ const Container = styled.div`
     height: 100%;
     position: fixed;
     z-index: -1;
-    @media screen and (max-width: 728px) {
+    @media screen and (max-width: 1228px) {
       width: 100%;
       
     }
