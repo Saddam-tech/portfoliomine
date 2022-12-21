@@ -8,7 +8,7 @@ const Resume = () => {
       id: 1,
       title: "Espotworld",
       description:
-        "[made by CredIT] One of the websites where I made a huge contribution to the development of the game side, UI and websocket communication with the backend",
+        "One of the websites where I made a huge contribution to the development of the game side, UI and websocket communication with the backend",
       link: "https://espotworld.com/",
       src: "./videos/espot.png",
       gh: "https://github.com/Saddam-tech/classpot-front.git",
@@ -17,7 +17,7 @@ const Resume = () => {
       id: 2,
       title: "Korowd.com",
       description:
-        "[made by CredIT] Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
+        "Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
       link: "https://korowd.com/",
       src: "./videos/korowd.png",
       gh: "https://github.com/teamcredit/korowd-front.git",

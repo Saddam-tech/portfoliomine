@@ -19,18 +19,14 @@ const About = () => {
             </p>
 
             <h1>Employment History</h1>
-            <a href="https://teamcredit.kr/">
-              <p>teamcredit.kr</p>
-            </a>
+            <p>CreditIT</p>
             <p>
               (2021.11.01 ~ 2022.03.01) Finished 4 month internship and managed
               front-end development of the company`s leading projects. Have been
               working with the back-end engineering team and developing complex
               systems using variety of modern software
             </p>
-            <a href="https://chainlabs.one/">
-              <p>chainlabs.one</p>
-            </a>
+            <p>ChainlabsIT</p>
             <p>
               (2022.03.01 ~ now) Handling backend development + front end of the
               company`s leading projects. Getting to learn solidity and solidity
