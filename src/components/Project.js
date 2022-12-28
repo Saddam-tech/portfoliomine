@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-
+import { useTranslation } from "react-i18next";
 const Project = ({ link, title, description, src, video, gh }) => {
+  const { t } = useTranslation();
   return (
     <Container>
       <a href={link} target="blank">
@@ -11,11 +12,11 @@ const Project = ({ link, title, description, src, video, gh }) => {
           <img src={src} alt="pictures" className="image" />
         )}
         <h3>{title}</h3>
-        <h4>{description}</h4>
+        <h4>{t(description)}</h4>
       </a>
       <div className="button-wrap">
-        <a href={gh}>Code</a>
-        <a href={link}>Redirect Link</a>
+        <a href={gh}>{t("code")}</a>
+        <a href={link}>{t("redirect_link")}</a>
       </div>
     </Container>
   );

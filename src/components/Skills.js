@@ -1,22 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { Fade } from "react-reveal";
-
+import { useTranslation } from "react-i18next";
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <Container>
       <Fade right>
         <div className="container-1">
-          <h1 className="heading-1">Education</h1>
-          <p>
-            The bachelor`s degree in Business administration at Sejong
-            University in Seoul, South Korea
-          </p>
+          <h1 className="heading-1">{t("education_name")}</h1>
+          <p>{t("education")}</p>
         </div>
       </Fade>
       <div className="container-2">
         <Fade left>
-          <h1 className="heading-2">My Stack:</h1>
+          <h1 className="heading-2">{t("stack")}:</h1>
           <h2>HTML5</h2>
           <div className="box1">
             <div className="box1-1"></div>

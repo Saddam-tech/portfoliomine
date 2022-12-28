@@ -11,11 +11,7 @@ import BackgroundAnimation from "./BgAnimation";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
-
-  function changeLng(lng) {
-    i18n.changeLanguage(lng);
-  }
+  const { t } = useTranslation();
   return (
     <Container id="header">
       <Navbar />
@@ -88,13 +84,12 @@ const Header = () => {
               </a>
             </div>
           </Fade>
-          {/* <BackgroundAnimation /> */}
         </div>
       </div>
       <Fade bottom>
         <div className="icon2">
           <Scroll to="about" smooth={true} duration={1000} spy={true}>
-            <button>Learn More</button>
+            <button>{t("learn_more")}</button>
           </Scroll>
         </div>
       </Fade>

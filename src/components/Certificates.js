@@ -8,7 +8,7 @@ const Certificates = () => {
   const [certificates] = useState([
     {
       id: 3,
-      title: "My resume",
+      title: "my_resume",
       content: null,
       type: "resume",
       jpg: "./videos/resume-picture.png",

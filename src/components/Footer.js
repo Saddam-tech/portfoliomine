@@ -7,14 +7,16 @@ import { Fade } from "react-reveal";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const date = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <Container>
       <div>
-        <p>Keep in touch with me on social media:</p>
+        <p>{t("keep_in_touch")}</p>
         <Fade bottom>
           <div className="icons">
             <a href="https://github.com/Saddam-tech" target="blank">

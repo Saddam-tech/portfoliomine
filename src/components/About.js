@@ -5,32 +5,28 @@ import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-  const { t, i18n } = useTranslation();
-
-  function changeLng(lng) {
-    i18n.changeLanguage(lng);
-  }
+  const { t } = useTranslation();
   return (
     <Container id="about">
       <div className="container">
         <div className="content">
           <span className="border"></span>
           <Fade right>
-            <h1>About me</h1>
+            <h1>{t("about_me")}</h1>
             <p>{t("description_1")}</p>
 
-            <h1>Employment History</h1>
+            <h1>{t("employment_history")}</h1>
             <p>CreditIT</p>
             <p>(2021.11.01 ~ 2022.03.01) {t("description_2")}</p>
             <p>ChainlabsIT</p>
             <p>(2022.03.01 ~ now) {t("description_3")}</p>
           </Fade>
           <Fade left>
-            <h1 className="heading2">Contact details</h1>
+            <h1 className="heading2">{t("contact_details")}</h1>
             <div className="contact-details">
               <p>Saddam Salokhiddinov</p>
-              <p>From Uzbekistan, living in Seoul, South Korea</p>
-              <a href="tel:01084103777">Phone number: 010 8410 3777</a>
+              <p>{t("location")}</p>
+              <a href="tel:01084103777">{t("phone")}: 010 8410 3777</a>
             </div>
           </Fade>
           <span className="border"></span>

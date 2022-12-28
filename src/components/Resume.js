@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Project from "./Project";
+import { useTranslation } from "react-i18next";
 
 const Resume = () => {
+  const { t } = useTranslation();
   const [projects] = useState([
     {
       id: 1,
@@ -44,7 +46,7 @@ const Resume = () => {
     <Container id="resume">
       <div className="header">
         <span className="border"></span>
-        <h1>Projects</h1>
+        <h1>{t("projects")}</h1>
       </div>
       <div className="container">
         {projects.map((item) => (

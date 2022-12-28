@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const Certificates = (props) => {
+  const { t } = useTranslation();
   return (
     <Container>
       <div className="container">
-        <h1>{props.title}</h1>
+        <h1>{t(props.title)}</h1>
         <h3>{props.content}</h3>
         <a href={props.path} download>
           {props.jpg ? (
@@ -18,7 +20,7 @@ const Certificates = (props) => {
           ) : (
             <img src={props.path} alt="diploma" className="image" />
           )}
-          <p>Click to download</p>
+          <p>{t("click_to_download")}</p>
         </a>
       </div>
     </Container>
