@@ -7,8 +7,7 @@ const Resume = () => {
     {
       id: 1,
       title: "Espotworld",
-      description:
-        "One of the websites where I made a huge contribution to the development of the game side, UI and websocket communication with the backend",
+      description: "pr_desc_1",
       link: "https://espotworld.com/",
       src: "./videos/espot.png",
       gh: "https://github.com/Saddam-tech/classpot-front.git",
@@ -16,8 +15,7 @@ const Resume = () => {
     {
       id: 2,
       title: "Korowd.com",
-      description:
-        "Here I implemented the communication of the client side with the server on all parts for fetching and posting data",
+      description: "pr_desc_2",
       link: "https://korowd.com/",
       src: "./videos/korowd.png",
       gh: "https://github.com/teamcredit/korowd-front.git",
@@ -25,8 +23,7 @@ const Resume = () => {
     {
       id: 7,
       title: "Forkify App",
-      description:
-        "Food search and recipe finder website that uses real-time API to fetch data from",
+      description: "pr_desc_3",
       link: "https://forkifymine.netlify.app/",
       src: "./videos/forkify.mp4",
       gh: "https://github.com/Saddam-tech/forkifymine.git",
@@ -35,8 +32,7 @@ const Resume = () => {
     {
       id: 8,
       title: "NewsFeed App",
-      description:
-        "News website that feeds the latest news from a real-time API",
+      description: "pr_desc_4",
       link: "https://newsfeed.netlify.app/",
       src: "./videos/newsfeed.mp4",
       gh: "https://github.com/Saddam-tech/newsFeed.com.git",

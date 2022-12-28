@@ -8,8 +8,14 @@ import { Fade } from "react-reveal";
 import Navbar from "./Navbar";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import BackgroundAnimation from "./BgAnimation";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
+
+  function changeLng(lng) {
+    i18n.changeLanguage(lng);
+  }
   return (
     <Container id="header">
       <Navbar />
@@ -23,11 +29,11 @@ const Header = () => {
         <div className="text">
           <Fade bottom>
             <h1>
-              Hi I am Sam,
+              {t("greeting_1")}
               <br />
-              FullStack Web &&
+              {t("greeting_2")}
               <br />
-              Mobile Dev
+              {t("greeting_3")}
             </h1>
           </Fade>
           <Fade bottom>

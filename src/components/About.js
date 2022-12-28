@@ -2,8 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Skills from "./Skills";
 import { Fade } from "react-reveal";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t, i18n } = useTranslation();
+
+  function changeLng(lng) {
+    i18n.changeLanguage(lng);
+  }
   return (
     <Container id="about">
       <div className="container">
@@ -11,29 +17,13 @@ const About = () => {
           <span className="border"></span>
           <Fade right>
             <h1>About me</h1>
-            <p>
-              I turn coffee into code... My name is Saddam (people call me Sam)
-              and I am a graduate from Sejong university in Seoul and a software
-              engineer with a great experience in web development and have a
-              really good background on modern web development tools.
-            </p>
+            <p>{t("description_1")}</p>
 
             <h1>Employment History</h1>
             <p>CreditIT</p>
-            <p>
-              (2021.11.01 ~ 2022.03.01) Finished 4 month internship and managed
-              front-end development of the company`s leading projects. Have been
-              working with the back-end engineering team and developing complex
-              systems using variety of modern software
-            </p>
+            <p>(2021.11.01 ~ 2022.03.01) {t("description_2")}</p>
             <p>ChainlabsIT</p>
-            <p>
-              (2022.03.01 ~ now) Handling backend development + front end of the
-              company`s leading projects. Getting to learn solidity and solidity
-              development tools for blockchain interaction. Sending tokens,
-              managing smart contracts, connecting different wallets to the
-              website and talking to blockchain networks.
-            </p>
+            <p>(2022.03.01 ~ now) {t("description_3")}</p>
           </Fade>
           <Fade left>
             <h1 className="heading2">Contact details</h1>
