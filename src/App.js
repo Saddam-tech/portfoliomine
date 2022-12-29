@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Container from "./components/Container";
 import Drawer from "./components/Drawer";
 import { GlobalStyles } from "./components/GlobalStyles";
+import Backdrop from "./components/Backdrop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
       <GlobalStyles />
       <Drawer drawer={drawer} />
       <Header drawer={drawer} setDrawer={setDrawer} />
+      {drawer && <Backdrop setDrawer={setDrawer} />}
       <Container />
     </div>
   ) : (

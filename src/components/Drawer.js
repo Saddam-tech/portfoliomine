@@ -19,6 +19,6 @@ const Container = styled.div`
   transform: ${({ drawer }) => (!drawer ? "translate(-400px)" : "")};
   transition: 0.4s ease-in-out;
   opacity: 0.9;
-  width: 80%;
+  width: 75%;
   z-index: 998;
 `;
