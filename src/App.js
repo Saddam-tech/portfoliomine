@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import Drawer from "./components/Drawer";
 import { GlobalStyles } from "./components/GlobalStyles";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       }}
     >
       <GlobalStyles />
+      <Drawer />
       <Header />
       <Container />
     </div>

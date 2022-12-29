@@ -103,6 +103,7 @@ const Body = styled.div`
   z-index: 1;
   position: fixed;
   top: 0;
+  z-index: 999;
 
   @media screen and (max-width: 728px) {
     justify-content: space-between;
@@ -183,12 +184,12 @@ const Body = styled.div`
 
   #nav-icon2.open span:nth-child(1) {
     left: 10px;
-    top: 14px;
+    top: 4px;
   }
 
   #nav-icon2.open span:nth-child(2) {
     left: calc(50% - 5px);
-    top: 14px;
+    top: 4px;
   }
 
   #nav-icon2.open span:nth-child(3) {
@@ -203,12 +204,12 @@ const Body = styled.div`
 
   #nav-icon2.open span:nth-child(5) {
     left: 10px;
-    top: 29px;
+    top: 20px;
   }
 
   #nav-icon2.open span:nth-child(6) {
     left: calc(50% - 5px);
-    top: 29px;
+    top: 20px;
   }
 
   .switch {
