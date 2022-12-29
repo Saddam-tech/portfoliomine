@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Fade } from "react-reveal";
 import { Link as Scroll } from "react-scroll";
 import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const [drawer, setDrawer] = useState(false);
 
   function changeLng(e) {
     let lng;
@@ -61,19 +62,30 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <center>
-          <div className="switch">
-            <input
-              id="language-toggle"
-              className="check-toggle check-toggle-round-flat"
-              type="checkbox"
-              onChange={(e) => changeLng(e)}
-            />
-            <label htmlFor="language-toggle"></label>
-            <span className="on">KR</span>
-            <span className="off">EN</span>
-          </div>
-        </center>
+        <div
+          onClick={() => setDrawer((prev) => !prev)}
+          id="nav-icon2"
+          className={drawer ? "open" : ""}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className="switch">
+          <input
+            id="language-toggle"
+            className="check-toggle check-toggle-round-flat"
+            type="checkbox"
+            onChange={(e) => changeLng(e)}
+          />
+          <label htmlFor="language-toggle"></label>
+          <span className="on">KR</span>
+          <span className="off">EN</span>
+        </div>
       </Fade>
     </Body>
   );
@@ -92,10 +104,121 @@ const Body = styled.div`
   position: fixed;
   top: 0;
 
+  @media screen and (max-width: 728px) {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #nav-icon2 {
+    width: 60px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #nav-icon2 span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 35%;
+    background: #47c8d6;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  #nav-icon2 span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+  }
+
+  #nav-icon2 span:nth-child(odd) {
+    left: 10px;
+    border-radius: 9px 0 0 9px;
+  }
+
+  #nav-icon2 span:nth-child(1),
+  #nav-icon2 span:nth-child(2) {
+    top: 0px;
+  }
+
+  #nav-icon2 span:nth-child(3),
+  #nav-icon2 span:nth-child(4) {
+    top: 10px;
+  }
+
+  #nav-icon2 span:nth-child(5),
+  #nav-icon2 span:nth-child(6) {
+    top: 20px;
+  }
+
+  #nav-icon2.open span:nth-child(1),
+  #nav-icon2.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #nav-icon2.open span:nth-child(2),
+  #nav-icon2.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #nav-icon2.open span:nth-child(1) {
+    left: 10px;
+    top: 14px;
+  }
+
+  #nav-icon2.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 14px;
+  }
+
+  #nav-icon2.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  #nav-icon2.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+
+  #nav-icon2.open span:nth-child(5) {
+    left: 10px;
+    top: 29px;
+  }
+
+  #nav-icon2.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 29px;
+  }
+
   .switch {
     position: relative;
     display: inline-block;
     margin: 0 5px;
+
+    @media screen and (max-width: 728px) {
+      margin: 25px 10px 0;
+    }
   }
 
   .switch > span {
@@ -205,12 +328,6 @@ const Body = styled.div`
     margin-left: 25px;
   }
 
-  @media screen and (max-width: 728px) {
-    width: 0;
-    margin: 0;
-    padding: 0;
-  }
-
   .navigation {
     display: flex;
     align-items: center;
@@ -218,6 +335,10 @@ const Body = styled.div`
     list-style-type: none;
     width: 90%;
     height: 100%;
+
+    @media screen and (max-width: 728px) {
+      display: none;
+    }
   }
 
   .navigation:hover {
