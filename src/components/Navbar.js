@@ -242,8 +242,6 @@ const Body = styled.div`
   li {
     display: inline-block;
     position: relative;
-    /* padding: 16px; */
-    font-size: 18px;
   }
   li:after {
     content: "";
@@ -274,6 +272,9 @@ const Body = styled.div`
     color: white;
     padding: 10px;
     border-radius: 5px;
+    @media screen and (max-width: 728px) {
+      font-size: 17px;
+    }
   }
 
   @media screen and (max-width: 728px) {
