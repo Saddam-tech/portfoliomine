@@ -10,11 +10,11 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import BackgroundAnimation from "./BgAnimation";
 import { useTranslation } from "react-i18next";
 
-const Header = () => {
+const Header = ({ drawer, setDrawer }) => {
   const { t } = useTranslation();
   return (
     <Container id="header">
-      <Navbar />
+      <Navbar drawer={drawer} setDrawer={setDrawer} />
       <div className="container">
         <Fade bottom>
           <img src="./videos/avatar.png" className="pic" alt="pic" />

@@ -3,9 +3,8 @@ import styled from "styled-components";
 import { Fade } from "react-reveal";
 import { Link as Scroll } from "react-scroll";
 import { useTranslation } from "react-i18next";
-const Navbar = () => {
+const Navbar = ({ drawer, setDrawer }) => {
   const { t, i18n } = useTranslation();
-  const [drawer, setDrawer] = useState(false);
 
   function changeLng(e) {
     let lng;

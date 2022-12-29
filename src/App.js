@@ -6,6 +6,7 @@ import { GlobalStyles } from "./components/GlobalStyles";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [drawer, setDrawer] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,11 +22,12 @@ function App() {
         justifyContent: "center",
         flexDirection: "column",
         overflowY: "hidden",
+        position: "relative",
       }}
     >
       <GlobalStyles />
-      <Drawer />
-      <Header />
+      <Drawer drawer={drawer} />
+      <Header drawer={drawer} setDrawer={setDrawer} />
       <Container />
     </div>
   ) : (
