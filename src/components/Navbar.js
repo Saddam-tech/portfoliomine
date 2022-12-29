@@ -100,11 +100,11 @@ const Body = styled.div`
 
   .switch > span {
     position: absolute;
-    top: 14px;
+    top: 9px;
     pointer-events: none;
     font-family: "Helvetica", Arial, sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     width: 50%;
@@ -150,8 +150,10 @@ const Body = styled.div`
   input.check-toggle-round-flat + label {
     opacity: 0.5;
     padding: 2px;
-    width: 97px;
-    height: 35px;
+    /* width: 97px;
+    height: 35px; */
+    width: 57px;
+    height: 25px;
     background-color: #47c8d6;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
@@ -181,9 +183,9 @@ const Body = styled.div`
   }
   input.check-toggle-round-flat + label:after {
     top: 4px;
-    left: 4px;
+    left: 6px;
     bottom: 4px;
-    width: 48px;
+    width: 22px;
     background-color: #fff;
     -webkit-border-radius: 52px;
     -moz-border-radius: 52px;
@@ -200,7 +202,7 @@ const Body = styled.div`
   }
 
   input.check-toggle-round-flat:checked + label:after {
-    margin-left: 44px;
+    margin-left: 25px;
   }
 
   @media screen and (max-width: 728px) {
@@ -214,7 +216,7 @@ const Body = styled.div`
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
 
