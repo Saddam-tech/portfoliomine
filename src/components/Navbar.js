@@ -121,6 +121,9 @@ const Body = styled.div`
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    @media screen and (min-width: 728px) {
+      display: none;
+    }
   }
 
   #nav-icon2 span {

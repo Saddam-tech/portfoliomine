@@ -27,7 +27,7 @@ function App() {
       }}
     >
       <GlobalStyles />
-      <Drawer drawer={drawer} />
+      <Drawer drawer={drawer} setDrawer={setDrawer} />
       <Header drawer={drawer} setDrawer={setDrawer} />
       {drawer && <Backdrop setDrawer={setDrawer} />}
       <Container />

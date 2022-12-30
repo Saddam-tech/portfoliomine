@@ -9,7 +9,7 @@ export default Backdrop;
 
 const Container = styled.div`
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: #000;
