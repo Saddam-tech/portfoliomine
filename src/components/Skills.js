@@ -15,79 +15,103 @@ const Skills = () => {
       <div className="container-2">
         <Fade left>
           <h1 className="heading-2">{t("stack")}:</h1>
-          <h2>HTML5</h2>
+          <h2>JavaScript ES6+ (NodeJS)</h2>
           <div className="box1">
             <div className="box1-1"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>CSS3</h2>
+          <h2>ExpressJs</h2>
           <div className="box1">
             <div className="box1-2"></div>
           </div>
         </Fade>
         <Fade left>
-          <h2>JavaScript ES6+</h2>
+          <h2>MySQL && MariaDB</h2>
           <div className="box1">
             <div className="box1-3"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>ExpressJs</h2>
+          <h2>Sequalize</h2>
           <div className="box1">
             <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>MySQL && (Sequalize)</h2>
+          <h2>RabbitMQ</h2>
           <div className="box1">
             <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>ReactJs</h2>
+          <h2>Kafka</h2>
+          <div className="box1">
+            <div className="box1-4"></div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>Python</h2>
+          <div className="box1">
+            <div className="box1-4"></div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>Git</h2>
+          <div className="box1">
+            <div className="box1-4"></div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>Socket.io</h2>
           <div className="box1">
             <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade left>
-          <h2>TypeScript</h2>
+          <h2>HTML5</h2>
           <div className="box1">
             <div className="box1-5"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>NextJs</h2>
+          <h2>CSS3</h2>
           <div className="box1">
             <div className="box1-6"></div>
           </div>
         </Fade>
         <Fade left>
-          <h2>Git</h2>
+          <h2>ReactJS</h2>
           <div className="box1">
             <div className="box1-7"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>VueJs</h2>
+          <h2>TypeScript</h2>
           <div className="box1">
             <div className="box1-8"></div>
           </div>
         </Fade>
         <Fade left>
-          <h2>Quasar(VueJs framework)</h2>
+          <h2>NextJS</h2>
           <div className="box1">
             <div className="box1-9"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>NuxtJs</h2>
+          <h2>VueJS</h2>
           <div className="box1">
             <div className="box1-10"></div>
           </div>
         </Fade>
         <Fade left>
-          <h2>Socket.io</h2>
+          <h2>Quasar (VueJS framework)</h2>
+          <div className="box1">
+            <div className="box1-11"></div>
+          </div>
+        </Fade>
+        <Fade left>
+          <h2>NuxtJS</h2>
           <div className="box1">
             <div className="box1-11"></div>
           </div>
@@ -214,70 +238,70 @@ const Container = styled.div`
   }
   .box1-2 {
     background: black;
-    width: 90%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-3 {
     background: black;
-    width: 90%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-4 {
     background: black;
-    width: 93%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-5 {
     background: black;
-    width: 90%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-6 {
     background: black;
-    width: 90%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-7 {
     background: black;
-    width: 90%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-8 {
     background: black;
-    width: 93%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-9 {
     background: black;
-    width: 92%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-10 {
     background: black;
-    width: 94%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
   .box1-11 {
     background: black;
-    width: 95%;
+    width: 97%;
     height: 50px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);

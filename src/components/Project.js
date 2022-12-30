@@ -15,8 +15,12 @@ const Project = ({ link, title, description, src, video, gh }) => {
         <h4>{t(description)}</h4>
       </a>
       <div className="button-wrap">
-        <a href={gh}>{t("code")}</a>
-        <a href={link}>{t("redirect_link")}</a>
+        <a href={gh} target="blank">
+          {t("code")}
+        </a>
+        <a href={link} target="blank">
+          {t("redirect_link")}
+        </a>
       </div>
     </Container>
   );
