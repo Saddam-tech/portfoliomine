@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import Drawer from "./components/Drawer";
 import { GlobalStyles } from "./components/GlobalStyles";
+import Backdrop from "./components/Backdrop";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [drawer, setDrawer] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,10 +23,13 @@ function App() {
         justifyContent: "center",
         flexDirection: "column",
         overflowY: "hidden",
+        position: "relative",
       }}
     >
       <GlobalStyles />
-      <Header />
+      <Drawer drawer={drawer} setDrawer={setDrawer} />
+      <Header drawer={drawer} setDrawer={setDrawer} />
+      {drawer && <Backdrop setDrawer={setDrawer} />}
       <Container />
     </div>
   ) : (
