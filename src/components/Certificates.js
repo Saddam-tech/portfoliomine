@@ -8,11 +8,19 @@ const Certificates = () => {
   const [certificates] = useState([
     {
       id: 3,
-      title: "my_resume",
+      title: "my_resume_kr",
       content: null,
       type: "resume",
       jpg: "./videos/resume-picture.png",
-      path: "./videos/resume-sam.pdf",
+      path: "./videos/ss-resume-kr.pdf",
+    },
+    {
+      id: 4,
+      title: "my_resume_en",
+      content: null,
+      type: "resume",
+      jpg: "./videos/resume-pic-en.png",
+      path: "./videos/ss-resume-en.pdf",
     },
   ]);
 
