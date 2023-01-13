@@ -8,7 +8,7 @@ const Navbar = ({ drawer, setDrawer }) => {
 
   function changeLng(e) {
     let lng;
-    e.target.checked ? (lng = "en") : (lng = "kr");
+    e.target.checked ? (lng = "kr") : (lng = "en");
     i18n.changeLanguage(lng);
   }
   return (
@@ -82,8 +82,8 @@ const Navbar = ({ drawer, setDrawer }) => {
             onChange={(e) => changeLng(e)}
           />
           <label htmlFor="language-toggle"></label>
-          <span className="on">KR</span>
-          <span className="off">EN</span>
+          <span className="on">EN</span>
+          <span className="off">KR</span>
         </div>
       </Fade>
     </Body>
