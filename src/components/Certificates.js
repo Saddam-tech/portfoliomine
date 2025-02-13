@@ -19,7 +19,7 @@ const Certificates = () => {
       title: "my_resume_en",
       content: null,
       type: "resume",
-      jpg: "./videos/resume-pic-en.png",
+      jpg: "./videos/resume-pic-en.jpeg",
       path: "./videos/ss-resume-en.pdf",
     },
   ]);

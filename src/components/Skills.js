@@ -21,6 +21,12 @@ const Skills = () => {
           </div>
         </Fade>
         <Fade right>
+          <h2>Solidity</h2>
+          <div className="box1">
+            <div className="box1-2"></div>
+          </div>
+        </Fade>
+        <Fade right>
           <h2>ExpressJs</h2>
           <div className="box1">
             <div className="box1-2"></div>
