@@ -47,6 +47,14 @@ const Resume = () => {
       gh: "https://github.com/Saddam-tech/newsFeed.com.git",
     },
     {
+      id: 9,
+      title: "Summit Charter Services",
+      description: "pr_desc_6",
+      link: "https://summitchs.com/",
+      src: "./videos/schs.jpeg",
+      gh: "#",
+    },
+    {
       id: 11,
       title: "Fitness device advertisement website",
       description: "pr_desc_11",
