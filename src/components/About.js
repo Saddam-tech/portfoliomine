@@ -21,7 +21,16 @@ const About = () => {
             <p>ChainlabsIT</p>
             <p>(2022.03.01 ~ 2023.02) {t("description_3")}</p>
             <p>LiberVance</p>
-            <p>(2023.03.01 ~ 2025.03.12) {t("description_4")}</p>
+            <p>
+              (2023.03.01 ~ 2025.03.12) {t("description_4")} <br />
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://docs.google.com/document/d/1_tDKk5OF8JIsOx_y99o3Gy7s-lcz-NtYkjjYl81hxXs/edit?usp=sharing"
+              >
+                {t("doc_link")}
+              </a>{" "}
+            </p>
           </Fade>
           <Fade left>
             <h1 className="heading2">{t("contact_details")}</h1>
