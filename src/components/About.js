@@ -18,11 +18,9 @@ const About = () => {
             <h1>{t("employment_history")}</h1>
             <p>CreditIT</p>
             <p>(2021.11.01 ~ 2022.03.01) {t("description_2")}</p>
-            <p>ChainlabsIT</p>
-            <p>(2022.03.01 ~ 2023.02) {t("description_3")}</p>
             <p>LiberVance</p>
             <p>
-              (2023.03.01 ~ 2025.03.12) {t("description_4")} <br />
+              (2022.03.01 ~ Current) {t("description_4")} <br />
               <a
                 target="_blank"
                 rel="noreferrer"
