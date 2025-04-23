@@ -74,16 +74,24 @@ const Skills = () => {
             <div className="box1-4"></div>
           </div>
         </Fade>
-        <Fade left>
-          <h2>HTML5</h2>
+        <Fade right>
+          <h2>
+            AWS/CloudFlare/Netlify server/domain deployment and management
+          </h2>
           <div className="box1">
-            <div className="box1-5"></div>
+            <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade right>
-          <h2>CSS3</h2>
+          <h2>Supabase Auth and Database management</h2>
           <div className="box1">
-            <div className="box1-6"></div>
+            <div className="box1-4"></div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>Docker</h2>
+          <div className="box1">
+            <div className="box1-4"></div>
           </div>
         </Fade>
         <Fade left>
