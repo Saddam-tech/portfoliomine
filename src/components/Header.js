@@ -75,7 +75,7 @@ const Header = ({ drawer, setDrawer }) => {
                 />
               </a>
               <a
-                href="https://www.linkedin.com/in/saddam-salokhiddinov-35a9351a7/"
+                href="https://www.linkedin.com/in/saddamsalokhiddinov/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
@@ -144,20 +144,25 @@ const Container = styled.div`
 
   .bg-animation {
     width: 100%;
-    max-width: 600px;
+    /* Increased max-width so background animation appears larger */
+    max-width: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* Slight scale to make the animation feel bigger without changing layout */
+    transform: translate(-50%, -50%) scale(1.08);
+    transform-origin: center center;
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.65;
 
     @media screen and (max-width: 1228px) {
-      max-width: 500px;
+      max-width: 800px;
+      transform: translate(-50%, -50%) scale(1.05);
     }
 
     @media screen and (max-width: 728px) {
-      max-width: 400px;
+      max-width: 600px;
+      transform: translate(-50%, -50%) scale(1);
     }
   }
 
@@ -176,6 +181,12 @@ const Container = styled.div`
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Prevent words from breaking mid-word */
+    word-break: keep-all;
+    overflow-wrap: normal;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
     line-height: 1.2;
 
     @media screen and (max-width: 1024px) {

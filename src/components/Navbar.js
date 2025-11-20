@@ -21,7 +21,10 @@ const Navbar = ({ drawer, setDrawer }) => {
                 to="header"
                 smooth={true}
                 duration={1000}
+                offset={-70}
                 className="link"
+                role="link"
+                tabIndex={0}
               >
                 {t("home")}
               </Scroll>
@@ -31,8 +34,11 @@ const Navbar = ({ drawer, setDrawer }) => {
                 to="about"
                 smooth={true}
                 duration={1000}
+                offset={-70}
                 spy={true}
                 className="link"
+                role="link"
+                tabIndex={0}
               >
                 {t("about")}
               </Scroll>
@@ -42,8 +48,11 @@ const Navbar = ({ drawer, setDrawer }) => {
                 to="resume"
                 smooth={true}
                 duration={1000}
+                offset={-70}
                 spy={true}
                 className="link"
+                role="link"
+                tabIndex={0}
               >
                 {t("projects")}
               </Scroll>
@@ -53,8 +62,11 @@ const Navbar = ({ drawer, setDrawer }) => {
                 to="testimonial"
                 smooth={true}
                 duration={1000}
+                offset={-70}
                 spy={true}
                 className="link"
+                role="link"
+                tabIndex={0}
               >
                 {t("more")}
               </Scroll>
@@ -343,7 +355,7 @@ const Body = styled.div`
     align-items: center;
     justify-content: center;
     list-style-type: none;
-    width: 90%;
+    width: 100%;
     height: 100%;
 
     @media screen and (max-width: 728px) {
@@ -351,28 +363,30 @@ const Body = styled.div`
     }
   }
 
-  .navigation:hover {
-    background: rgba(55, 105, 202, 0.14);
-  }
+  /* hover background removed for navigation */
 
   .ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     list-style-type: none;
-    width: 40%;
+    width: auto;
     height: 30px;
-    opacity: 0.6;
+    opacity: 0.9;
+    gap: clamp(12px, 3vw, 32px);
 
     @media screen and (max-width: 728px) {
       margin: 0;
       padding: 15px;
+      gap: 14px;
     }
   }
   li {
     display: inline-block;
     position: relative;
+    margin: 0;
+    padding: 0;
   }
   li:after {
     content: "";
@@ -390,10 +404,10 @@ const Body = styled.div`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  li:hover {
+  /* li:hover {
     transition: 0.25s;
     background: rgba(55, 105, 202, 0.14);
-  }
+  } */
 
   .link {
     font-family: Space Grotesk, sans-serif;
@@ -401,9 +415,14 @@ const Body = styled.div`
     text-decoration: none;
     cursor: pointer;
     color: white;
-    padding: clamp(8px, 1vw, 10px);
+    padding: clamp(6px, 0.7vw, 10px);
     border-radius: 5px;
     transition: color 0.3s ease;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba(71, 200, 214, 0.18);
+    }
 
     &:hover {
       color: rgba(255, 255, 255, 0.8);

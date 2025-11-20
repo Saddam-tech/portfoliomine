@@ -1,7 +1,7 @@
 {
-  "greeting_1": "Hi, I am Sam.",
-  "greeting_2": "That Software Engineer",
-  "greeting_3": "You need",
+  "greeting_1": "Welcome to my page!",
+  "greeting_2": "My name is Sam and",
+  "greeting_3": "I am a Full Stack Software Engineer",
   "description_1": "I turn coffee into code... My name is Saddam (people call me Sam) and I am a graduate from Sejong university in Seoul and a software engineer with a great experience in web development and have a really good background on modern web development tools.",
   "description_2": "Finished 4 month internship and managed front-end development of the company`s leading projects. Have been working with the back-end engineering team and developing complex systems using variety of modern software",
   "description_3": "Handled backend development + front end of the company`s leading projects. Learned solidity and solidity development tools for blockchain interaction. Sending tokens, managing smart contracts, connecting different wallets to the website and talking to blockchain networks.",
