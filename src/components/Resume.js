@@ -23,14 +23,6 @@ const Resume = () => {
       gh: "https://github.com/Saddam-tech/LinearTimelock.git",
     },
     {
-      id: 2,
-      title: "Korowd.com",
-      description: "pr_desc_2",
-      link: "https://korowd.com/",
-      src: "./videos/korowd.png",
-      gh: "https://github.com/teamcredit/korowd-front.git",
-    },
-    {
       id: 7,
       title: "Forkify App",
       description: "pr_desc_3",
@@ -45,23 +37,6 @@ const Resume = () => {
       link: "https://newsfeed.netlify.app/",
       src: "./videos/newsfeed.jpeg",
       gh: "https://github.com/Saddam-tech/newsFeed.com.git",
-    },
-    {
-      id: 9,
-      title: "Summit Charter Services",
-      description: "pr_desc_6",
-      link: "https://summitchs.com/",
-      src: "./videos/schs.jpeg",
-      gh: "#",
-    },
-    {
-      id: 11,
-      title: "Fitness device advertisement website",
-      description: "pr_desc_11",
-      link: "https://kosmos-fitness.com/",
-      src: "./videos/kosmos.png",
-      gh: "https://github.com/Saddam-tech/Kosmos.com",
-      video: false,
     },
   ]);
 
@@ -151,22 +126,14 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: clamp(90%, 85vw, 95%);
-    max-width: 1400px;
+    width: 50%;
     height: 100%;
     flex-wrap: wrap;
-    margin-top: clamp(120px, 15vh, 170px);
-    gap: 20px;
-
-    @media screen and (max-width: 1024px) {
-      width: 95%;
-      margin-top: clamp(100px, 12vh, 150px);
-    }
+    margin-top: 170px;
 
     @media screen and (max-width: 728px) {
       width: 100%;
-      margin-top: clamp(80px, 10vh, 100px);
-      gap: 15px;
+      margin-top: 100px;
     }
   }
 

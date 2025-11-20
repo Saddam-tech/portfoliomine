@@ -7,12 +7,19 @@ const Project = ({ link, title, description, src, video, gh }) => {
     <Container>
       <a href={link} target="_blank" rel="noopener noreferrer">
         {video ? (
-          <video src={src} className="image" autoPlay muted loop aria-label={`${title} project video`} />
+          <video
+            src={src}
+            className="image"
+            autoPlay
+            muted
+            loop
+            aria-label={`${title} project video`}
+          />
         ) : (
-          <img 
-            src={src} 
-            alt={`${title} project screenshot`} 
-            className="image" 
+          <img
+            src={src}
+            alt={`${title} project screenshot`}
+            className="image"
             loading="lazy"
             width="400"
             height="250"
@@ -21,14 +28,6 @@ const Project = ({ link, title, description, src, video, gh }) => {
         <h3>{title}</h3>
         <h4>{t(description)}</h4>
       </a>
-      <div className="button-wrap">
-        <a href={gh} target="_blank" rel="noopener noreferrer" aria-label={`View ${title} source code`}>
-          {t("code")}
-        </a>
-        <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${title} project`}>
-          {t("redirect_link")}
-        </a>
-      </div>
     </Container>
   );
 };
@@ -37,9 +36,8 @@ export default Project;
 
 const Container = styled.div`
   display: flex;
-  width: clamp(300px, 30vw, 400px);
-  min-height: 500px;
-  max-height: 600px;
+  width: 400px;
+  height: 500px;
   margin: 15px;
   flex-direction: column;
   align-items: center;
@@ -48,22 +46,10 @@ const Container = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   cursor: pointer;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 30px rgba(80, 78, 78, 0.7);
-  }
-
-  @media screen and (max-width: 1024px) {
-    width: clamp(280px, 45vw, 380px);
-  }
 
   @media screen and (max-width: 728px) {
     width: 100%;
-    max-width: 400px;
-    margin: 15px auto;
   }
 
   .button-wrap {

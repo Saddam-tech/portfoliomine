@@ -16,16 +16,6 @@ const Header = ({ drawer, setDrawer }) => {
     <Container id="header">
       <Navbar drawer={drawer} setDrawer={setDrawer} />
       <div className="container">
-        <Fade bottom>
-          <img
-            src="./videos/avatar.png"
-            className="pic"
-            alt="Saddam Salokhiddinov - Web Developer"
-            loading="eager"
-            width="450"
-            height="450"
-          />
-        </Fade>
         <div className="bg-animation">
           <BackgroundAnimation />
         </div>
@@ -133,41 +123,41 @@ const Container = styled.div`
 
   .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 80%;
-
-    @media screen and (max-width: 1228px) {
-      flex-direction: column;
-    }
+    position: relative;
   }
 
   .text {
     display: flex;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    max-width: 800px;
     flex-direction: column;
     text-align: center;
     opacity: 0.9;
-
-    @media screen and (max-width: 1228px) {
-      width: 100%;
-      margin: auto;
-    }
+    z-index: 2;
+    position: relative;
   }
 
   .bg-animation {
-    width: 42%;
+    width: 100%;
+    max-width: 600px;
     position: absolute;
-    right: 90px;
-    top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.6;
 
     @media screen and (max-width: 1228px) {
-      width: 100%;
-      left: 2px;
-      top: 220px;
+      max-width: 500px;
+    }
+
+    @media screen and (max-width: 728px) {
+      max-width: 400px;
     }
   }
 
@@ -194,24 +184,6 @@ const Container = styled.div`
 
     @media screen and (max-width: 728px) {
       font-size: clamp(1.75rem, 5vw, 2.5rem);
-    }
-  }
-
-  .pic {
-    width: clamp(280px, 35vw, 450px);
-    max-width: 100%;
-    height: auto;
-    margin: 0 5px 0 clamp(20px, 10vw, 220px);
-    object-fit: contain;
-
-    @media screen and (max-width: 1228px) {
-      margin: 60px auto 20px;
-      width: clamp(200px, 40vw, 350px);
-    }
-
-    @media screen and (max-width: 728px) {
-      width: clamp(180px, 50vw, 280px);
-      margin: 40px auto 20px;
     }
   }
 
