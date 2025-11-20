@@ -17,7 +17,7 @@ const Resume = () => {
       id: 2,
       title: "STT using OpenAI/Whisper",
       description: "pr_desc_6",
-      link: "https://demo.darwinai.ai/gpt",
+      link: "https://demo.darwinai.ai/stt",
       src: "./videos/real-stt-demo.png",
     },
     {
