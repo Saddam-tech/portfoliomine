@@ -54,47 +54,46 @@ export default About;
 const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: #0F1624;
-  flex-direction: column; 
-  color: #E4E4E6;
+  background-color: #0f1624;
+  flex-direction: column;
+  color: #e4e4e6;
+
+  @media screen and (max-width: 728px) {
+    width: 90%;
+  }
 
   .border {
     width: 80px;
     height: 5px;
     border-radius: 50px;
     margin-top: 40px;
-    background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }
- 
+
   .container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 40%;
-    margin: 70px;
-    
-
-    
+    width: 90%;
+    max-width: 900px;
+    margin: 70px auto;
 
     @media screen and (max-width: 728px) {
       flex-direction: column;
-      width: 65%;
-
     }
   }
- 
 
   .content {
-    display: flex; 
-    justify-content: flex-start;
-    flex-direction: column; 
-    width: 100%; 
-    margin-left: 20px;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 28px;
     font-size: 20px;
     font-family: Space Grotesk, sans-serif;
 
@@ -170,10 +169,6 @@ const Container = styled.div`
         font-size: clamp(0.9rem, 2vw, 1.1rem);
       }
     }
-    
-  }
-
-
   }
 
   .contact-details {

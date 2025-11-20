@@ -90,11 +90,22 @@ const Container = styled.div`
   .header {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    position: absolute;
-    left: 500px;
-    top: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 24px;
+    padding-left: 8px;
+
+    .border {
+      margin-top: 8px;
+      margin-bottom: 12px;
+      margin-left: 0;
+    }
 
     .border {
       width: 80px;
@@ -118,14 +129,14 @@ const Container = styled.div`
     }
 
     @media screen and (max-width: 1024px) {
-      left: clamp(20px, 5vw, 100px);
+      width: 90%;
       h1 {
         font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
       }
     }
 
     @media screen and (max-width: 728px) {
-      left: 20px;
+      width: 90%;
       h1 {
         font-size: clamp(1.5rem, 4vw, 2rem);
       }
@@ -134,15 +145,18 @@ const Container = styled.div`
 
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    gap: 94px;
+    width: 90%;
+    max-width: 900px;
     height: 100%;
     flex-wrap: wrap;
-    margin-top: 170px;
+    margin-top: 24px;
 
     @media screen and (max-width: 728px) {
-      width: 100%;
+      width: 90%;
+      gap: 34px;
       margin-top: 100px;
     }
   }

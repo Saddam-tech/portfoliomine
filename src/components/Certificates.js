@@ -47,7 +47,7 @@ const Container = styled.div`
   background-color: #0f1624;
 
   @media screen and (max-width: 728px) {
-    width: 100%;
+    width: 90%;
   }
 
   .container {

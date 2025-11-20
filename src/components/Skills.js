@@ -6,80 +6,63 @@ const Skills = () => {
   const { t } = useTranslation();
   return (
     <Container>
-      <Fade right>
+      <Fade cascade>
         <div className="container-1">
           <h1 className="heading-1">{t("education_name")}</h1>
           <p>{t("education")}</p>
         </div>
       </Fade>
       <div className="container-2">
-        <Fade left>
-          <h1 className="heading-2">{t("stack")}:</h1>
-          <h2>JavaScript ES6+ (NodeJS)</h2>
-          <div className="box1">
-            <div className="box1-1"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Python</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Local LLM Deployment using vLLM, TensorRT-LLM, Llama.CPP</h2>
-          <div className="box1">
-            <div className="box1-2"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Solidity</h2>
-          <div className="box1">
-            <div className="box1-2"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>ExpressJs</h2>
-          <div className="box1">
-            <div className="box1-2"></div>
-          </div>
-        </Fade>
-        <Fade left>
-          <h2>MySQL && MariaDB</h2>
-          <div className="box1">
-            <div className="box1-3"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>RabbitMQ</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade left>
-          <h2>ReactJS</h2>
-          <div className="box1">
-            <div className="box1-7"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>TypeScript</h2>
-          <div className="box1">
-            <div className="box1-8"></div>
-          </div>
-        </Fade>
-        <Fade left>
-          <h2>NextJS</h2>
-          <div className="box1">
-            <div className="box1-9"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>VueJS</h2>
-          <div className="box1">
-            <div className="box1-10"></div>
-          </div>
-        </Fade>
+        <h1 className="heading-2">{t("stack")}:</h1>
+        <h2>JavaScript ES6+ (NodeJS)</h2>
+        <div className="box1">
+          <div className="box1-1"></div>
+        </div>
+
+        <h2>Python</h2>
+        <div className="box1">
+          <div className="box1-4"></div>
+        </div>
+
+        <h2>Local LLM Deployment using vLLM, TensorRT-LLM, Llama.CPP</h2>
+        <div className="box1">
+          <div className="box1-2"></div>
+        </div>
+
+        <h2>Solidity</h2>
+        <div className="box1">
+          <div className="box1-2"></div>
+        </div>
+
+        <h2>ExpressJs</h2>
+        <div className="box1">
+          <div className="box1-2"></div>
+        </div>
+
+        <h2>MySQL && MariaDB</h2>
+        <div className="box1">
+          <div className="box1-3"></div>
+        </div>
+        <h2>RabbitMQ</h2>
+        <div className="box1">
+          <div className="box1-4"></div>
+        </div>
+        <h2>ReactJS</h2>
+        <div className="box1">
+          <div className="box1-7"></div>
+        </div>
+        <h2>TypeScript</h2>
+        <div className="box1">
+          <div className="box1-8"></div>
+        </div>
+        <h2>NextJS</h2>
+        <div className="box1">
+          <div className="box1-9"></div>
+        </div>
+        <h2>VueJS</h2>
+        <div className="box1">
+          <div className="box1-10"></div>
+        </div>
       </div>
     </Container>
   );
@@ -99,10 +82,10 @@ const Container = styled.div`
   .container-1 {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    max-width: 900px;
     height: 100%;
     position: relative;
-    left: 80px;
+    margin: 24px auto 0;
     padding: 20px;
 
     .heading-1 {
@@ -157,11 +140,11 @@ const Container = styled.div`
   .container-2 {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 90%;
+    max-width: 900px;
     height: 100%;
     position: relative;
-    left: 80px;
-    margin-bottom: 70px;
+    margin: 24px auto 70px;
 
     .heading-2 {
       font-weight: 800;
@@ -198,7 +181,6 @@ const Container = styled.div`
     @media screen and (max-width: 728px) {
       position: static;
       font-size: 1rem;
-      width: 90%;
       justify-content: center;
       align-items: flex-start;
 
@@ -216,7 +198,7 @@ const Container = styled.div`
     align-items: center;
     background: #e9e9e9;
     width: 100%;
-    height: 100%;
+    height: 2px;
     font-size: 40px;
     border-radius: 50px;
   }
@@ -233,7 +215,7 @@ const Container = styled.div`
   .box1-10,
   .box1-11 {
     width: 97%;
-    height: 50px;
+    height: 2px;
     border-radius: 50px;
     background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
   }

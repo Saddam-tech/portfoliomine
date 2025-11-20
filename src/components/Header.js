@@ -219,7 +219,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+
     /* ensure the learn-more button sits above the background animation */
     position: relative;
     z-index: 3;
