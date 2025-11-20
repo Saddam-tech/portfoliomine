@@ -17,7 +17,14 @@ const Header = ({ drawer, setDrawer }) => {
       <Navbar drawer={drawer} setDrawer={setDrawer} />
       <div className="container">
         <Fade bottom>
-          <img src="./videos/avatar.png" className="pic" alt="pic" />
+          <img
+            src="./videos/avatar.png"
+            className="pic"
+            alt="Saddam Salokhiddinov - Web Developer"
+            loading="eager"
+            width="450"
+            height="450"
+          />
         </Fade>
         <div className="bg-animation">
           <BackgroundAnimation />
@@ -34,7 +41,12 @@ const Header = ({ drawer, setDrawer }) => {
           </Fade>
           <Fade bottom>
             <div className="icons">
-              <a href="https://github.com/Saddam-tech" target="blank">
+              <a
+                href="https://github.com/Saddam-tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+              >
                 <GitHubIcon
                   style={{
                     width: "40px",
@@ -44,7 +56,10 @@ const Header = ({ drawer, setDrawer }) => {
                   }}
                 />
               </a>
-              <a href="mailto:salokhiddinov0727@gmail.com" target="blank">
+              <a
+                href="mailto:salokhiddinov0727@gmail.com"
+                aria-label="Send email"
+              >
                 <EmailIcon
                   style={{
                     width: "40px",
@@ -56,9 +71,10 @@ const Header = ({ drawer, setDrawer }) => {
               </a>
               <a
                 href="https://www.facebook.com/saddam.salokhiddinov"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook profile"
               >
-                {" "}
                 <FacebookIcon
                   style={{
                     width: "40px",
@@ -70,9 +86,10 @@ const Header = ({ drawer, setDrawer }) => {
               </a>
               <a
                 href="https://www.linkedin.com/in/saddam-salokhiddinov-35a9351a7/"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
               >
-                {" "}
                 <LinkedInIcon
                   style={{
                     width: "40px",
@@ -99,21 +116,20 @@ const Header = ({ drawer, setDrawer }) => {
 
 export default Header;
 const Container = styled.div`
- display: flex;
- height: 100vh;
- width: 100%;  
- justify-content: space-around; 
- flex-direction: column;
- object-fit: contain; 
- background-size: cover; 
- background-position: center;
- background-color: #0f1624;
- margin: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  object-fit: contain;
+  background-size: cover;
+  background-position: center;
+  background-color: #0f1624;
+  margin: 0;
 
- @media screen and (max-width: 1228px) {
-   background-attachment: fixed; 
- }
-
+  @media screen and (max-width: 1228px) {
+    background-attachment: fixed;
+  }
 
   .container {
     display: flex;
@@ -129,7 +145,7 @@ const Container = styled.div`
   }
 
   .text {
-    display: flex; 
+    display: flex;
     width: 50%;
     height: 50%;
     flex-direction: column;
@@ -157,30 +173,45 @@ const Container = styled.div`
 
   h1 {
     font-family: Space Grotesk, sans-serif;
-    font-size: 6rem;
+    font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
     font-weight: 800;
     margin: auto;
     background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-  );
-  width: max-content;
-  max-width: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    
-    @media screen and (max-width: 1228px) {
-      font-size: 2.5rem;
+      121.57deg,
+      #ffffff 18.77%,
+      rgba(255, 255, 255, 0.66) 60.15%
+    );
+    width: max-content;
+    max-width: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+
+    @media screen and (max-width: 1024px) {
+      font-size: clamp(2rem, 4vw + 1rem, 3rem);
+    }
+
+    @media screen and (max-width: 728px) {
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
     }
   }
 
   .pic {
-    width: 550px;
-    margin: 0 5px 0 220px;
+    width: clamp(280px, 35vw, 450px);
+    max-width: 100%;
+    height: auto;
+    margin: 0 5px 0 clamp(20px, 10vw, 220px);
+    object-fit: contain;
+
     @media screen and (max-width: 1228px) {
-      margin: 60px 20px 20px;
-      width: 40%;
+      margin: 60px auto 20px;
+      width: clamp(200px, 40vw, 350px);
+    }
+
+    @media screen and (max-width: 728px) {
+      width: clamp(180px, 50vw, 280px);
+      margin: 40px auto 20px;
     }
   }
 
@@ -192,7 +223,6 @@ const Container = styled.div`
     margin: auto;
     margin-top: 60px;
     padding: 10px;
-     
 
     @media screen and (max-width: 1228px) {
       width: 80%;
@@ -203,29 +233,28 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; 
-     
-     
+    width: 100%;
+
     button {
       border: none;
       cursor: pointer;
       text-align: center;
-      background: linear-gradient(270deg, #13ADC7 0%, #945DD6 100%);
+      background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
       border-radius: 50px;
-      width: 230px;
-      height: 50px;
-      line-height: 50px;
+      width: clamp(180px, 20vw, 230px);
+      height: clamp(45px, 5vh, 50px);
+      line-height: clamp(45px, 5vh, 50px);
       color: #ffffff;
-      font-size: 18px;
+      font-size: clamp(16px, 1.5vw, 18px);
       font-weight: 800;
       font-family: Space Grotesk, sans-serif;
       transition: 0.4s ease;
     }
     button:hover {
-      background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+      background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
     }
   }
-  
+
   video {
     object-fit: cover;
     width: 100%;
@@ -234,6 +263,6 @@ const Container = styled.div`
     z-index: -1;
     @media screen and (max-width: 1228px) {
       width: 100%;
-      
     }
+  }
 `;

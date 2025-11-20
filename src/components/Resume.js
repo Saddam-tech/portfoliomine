@@ -120,20 +120,29 @@ const Container = styled.div`
 
     h1 {
       font-weight: 800;
-      font-size: 65px;
+      font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
       background: linear-gradient(
         121.57deg,
         #ffffff 18.77%,
         rgba(255, 255, 255, 0.66) 60.15%
       );
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
+      line-height: 1.3;
+    }
+
+    @media screen and (max-width: 1024px) {
+      left: clamp(20px, 5vw, 100px);
+      h1 {
+        font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+      }
     }
 
     @media screen and (max-width: 728px) {
       left: 20px;
       h1 {
-        font-size: 34px;
+        font-size: clamp(1.5rem, 4vw, 2rem);
       }
     }
   }
@@ -142,14 +151,22 @@ const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: clamp(90%, 85vw, 95%);
+    max-width: 1400px;
     height: 100%;
     flex-wrap: wrap;
-    margin-top: 170px;
+    margin-top: clamp(120px, 15vh, 170px);
+    gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+      width: 95%;
+      margin-top: clamp(100px, 12vh, 150px);
+    }
 
     @media screen and (max-width: 728px) {
       width: 100%;
-      margin-top: 100px;
+      margin-top: clamp(80px, 10vh, 100px);
+      gap: 15px;
     }
   }
 

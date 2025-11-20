@@ -61,10 +61,13 @@ const Navbar = ({ drawer, setDrawer }) => {
             </li>
           </ul>
         </nav>
-        <div
+        <button
           onClick={() => setDrawer((prev) => !prev)}
           id="nav-icon2"
           className={drawer ? "open" : ""}
+          aria-label={drawer ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={drawer}
+          type="button"
         >
           <span></span>
           <span></span>
@@ -72,7 +75,7 @@ const Navbar = ({ drawer, setDrawer }) => {
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
         <div className="switch">
           <input
@@ -111,6 +114,7 @@ const Body = styled.div`
 
   #nav-icon2 {
     width: 60px;
+    height: 60px;
     position: relative;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -121,6 +125,9 @@ const Body = styled.div`
     -o-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
     @media screen and (min-width: 728px) {
       display: none;
     }
@@ -390,14 +397,24 @@ const Body = styled.div`
 
   .link {
     font-family: Space Grotesk, sans-serif;
-    font-size: 20px;
+    font-size: clamp(16px, 1.5vw, 20px);
     text-decoration: none;
     cursor: pointer;
     color: white;
-    padding: 10px;
+    padding: clamp(8px, 1vw, 10px);
     border-radius: 5px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: clamp(15px, 1.8vw, 18px);
+    }
+
     @media screen and (max-width: 728px) {
-      font-size: 17px;
+      font-size: clamp(14px, 2vw, 17px);
     }
   }
 

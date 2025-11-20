@@ -1,9 +1,27 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import Header from "./components/Header";
 import Container from "./components/Container";
 import Drawer from "./components/Drawer";
 import { GlobalStyles } from "./components/GlobalStyles";
 import Backdrop from "./components/Backdrop";
+
+const AppWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: hidden;
+  position: relative;
+`;
+
+const LoadingText = styled.p`
+  text-align: center;
+  vertical-align: center;
+  line-height: 750px;
+  font-family: Optima, sans-serif;
+  font-size: 30px;
+`;
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,34 +34,15 @@ function App() {
   }, []);
 
   return !loading ? (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-        overflowY: "hidden",
-        position: "relative",
-      }}
-    >
+    <AppWrapper>
       <GlobalStyles />
       <Drawer drawer={drawer} setDrawer={setDrawer} />
       <Header drawer={drawer} setDrawer={setDrawer} />
       {drawer && <Backdrop setDrawer={setDrawer} />}
       <Container />
-    </div>
+    </AppWrapper>
   ) : (
-    <p
-      style={{
-        textAlign: "center",
-        verticalAlign: "center",
-        lineHeight: "750px",
-        fontFamily: "Optima",
-        fontSize: "30px",
-      }}
-    >
-      Loading...
-    </p>
+    <LoadingText>Loading...</LoadingText>
   );
 }
 

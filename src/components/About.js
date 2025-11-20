@@ -98,54 +98,75 @@ const Container = styled.div`
 
     h1 {
       font-weight: 800;
-      font-size: 65px;
+      font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
       background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.3;
+      margin-bottom: 1rem;
     }
 
-   
     h2 {
       font-weight: 800;
-      font-size: 32px;
+      font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2rem);
       background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        121.57deg,
+        #ffffff 18.77%,
+        rgba(255, 255, 255, 0.66) 60.15%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.4;
+      margin-bottom: 0.75rem;
     }
 
     p {
-      line-height: 40px;
-      font-size: 24px;
+      line-height: 1.6;
+      font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
       color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      h1 {
+        font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+      }
+      h2 {
+        font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
+      }
+      p {
+        font-size: clamp(0.95rem, 1.2vw + 0.3rem, 1.1rem);
+      }
     }
 
     @media screen and (max-width: 728px) {
       margin: 0;
-      padding: 0; 
-      font-size: 17px;
+      padding: 0;
+      font-size: 1rem;
 
       h1 {
-        font-size: 24px;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        margin-bottom: 0.75rem;
       }
       h2 {
-        font-size: 24px;
+        font-size: clamp(1.25rem, 3vw, 1.5rem);
+        margin-bottom: 0.5rem;
       }
       p {
-        font-size: 20px;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
       }
 
       a {
-        font-size: 17px;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
       }
-      
     }
     
   }
@@ -155,14 +176,14 @@ const Container = styled.div`
 
   .contact-details {
     margin-bottom: 30px;
-    line-height: 40px;
-    font-size: 24px;
+    line-height: 1.6;
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
     color: rgba(255, 255, 255, 0.5);
   }
 
-  a { 
-    line-height: 40px;
-    font-size: 24px;
+  a {
+    line-height: 1.6;
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
     color: rgba(255, 255, 255, 0.5);
   }
 `;

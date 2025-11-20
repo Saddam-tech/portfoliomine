@@ -9,16 +9,27 @@ const Certificates = (props) => {
       <div className="container">
         <h1>{t(props.title)}</h1>
         <h3>{props.content}</h3>
-        <a href={props.path} download>
+        <a 
+          href={props.path} 
+          download
+          aria-label={`Download ${t(props.title)}`}
+        >
           {props.jpg ? (
             <img
               src={props.jpg}
-              style={{ height: "330px", width: "290px" }}
-              alt="diploma"
-              className="image"
+              className="image resume-image"
+              alt={`${t(props.title)} preview`}
+              loading="lazy"
+              width="290"
+              height="330"
             />
           ) : (
-            <img src={props.path} alt="diploma" className="image" />
+            <img 
+              src={props.path} 
+              alt={`${t(props.title)} preview`} 
+              className="image" 
+              loading="lazy"
+            />
           )}
           <p>{t("click_to_download")}</p>
         </a>
@@ -31,18 +42,29 @@ export default Certificates;
 
 const Container = styled.div`
   display: flex;
-  width: 20%;
+  width: clamp(250px, 25vw, 350px);
   align-items: center;
   justify-content: center;
   margin: 30px;
-  padding: 30px;
+  padding: clamp(20px, 3vw, 30px);
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   cursor: pointer;
-  transition: 0.5s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 30px rgba(80, 78, 78, 0.7);
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: clamp(220px, 40vw, 300px);
+  }
 
   @media screen and (max-width: 728px) {
     width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
   }
 
   .container {
@@ -57,9 +79,18 @@ const Container = styled.div`
 
   .image {
     width: 100%;
-    height: 50%;
+    max-width: 100%;
+    height: auto;
     position: relative;
     box-shadow: 9px 9px 9px #000000;
+    object-fit: contain;
+  }
+
+  .resume-image {
+    height: auto;
+    width: 100%;
+    max-width: 290px;
+    max-height: 400px;
   }
 
   a {
@@ -74,18 +105,20 @@ const Container = styled.div`
 
     p {
       color: #d4c0c0;
-      font-size: 12px;
-      padding: 10px 20px;
+      font-size: clamp(11px, 1.2vw, 13px);
+      padding: clamp(8px, 1vw, 12px) clamp(15px, 2vw, 20px);
       background: #6b3030;
-      margin-top: 50px;
+      margin-top: clamp(30px, 4vh, 50px);
       border-radius: 15px;
       font-weight: 600;
       border: none;
-      width: 40%;
-      transition: 0.5s;
+      width: clamp(120px, 40%, 180px);
+      transition: 0.3s ease;
       cursor: pointer;
+      text-align: center;
       &:hover {
         background: #801414;
+        transform: scale(1.05);
       }
     }
   }

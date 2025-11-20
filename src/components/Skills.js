@@ -157,36 +157,49 @@ const Container = styled.div`
 
     .heading-1 {
       font-weight: 800;
-      font-size: 65px;
+      font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
       background: linear-gradient(
         121.57deg,
         #ffffff 18.77%,
         rgba(255, 255, 255, 0.66) 60.15%
       );
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
+      line-height: 1.3;
+      margin-bottom: 1rem;
     }
 
     p {
       position: relative;
       width: 100%;
-      line-height: 40px;
-      font-size: 24px;
+      line-height: 1.6;
+      font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
       color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media screen and (max-width: 1024px) {
+      .heading-1 {
+        font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+      }
+      p {
+        font-size: clamp(0.95rem, 1.2vw + 0.3rem, 1.1rem);
+      }
     }
 
     @media screen and (max-width: 728px) {
       position: static;
-      font-size: 17px;
+      font-size: 1rem;
       width: 90%;
       justify-content: center;
       align-items: flex-start;
 
       .heading-1 {
-        font-size: 24px;
+        font-size: clamp(1.5rem, 4vw, 2rem);
       }
       p {
-        font-size: 20px;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        line-height: 1.5;
       }
     }
   }
@@ -202,33 +215,48 @@ const Container = styled.div`
 
     .heading-2 {
       font-weight: 800;
-      font-size: 65px;
+      font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
       background: linear-gradient(
         121.57deg,
         #ffffff 18.77%,
         rgba(255, 255, 255, 0.66) 60.15%
       );
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
     }
 
     h2 {
       color: rgba(255, 255, 255, 0.5);
       font-weight: 800;
+      font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .heading-2 {
+        font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+      }
+      h2 {
+        font-size: clamp(0.95rem, 1.2vw + 0.3rem, 1.1rem);
+      }
     }
 
     @media screen and (max-width: 728px) {
       position: static;
-      font-size: 17px;
+      font-size: 1rem;
       width: 90%;
       justify-content: center;
       align-items: flex-start;
 
       .heading-2 {
-        font-size: 24px;
+        font-size: clamp(1.5rem, 4vw, 2rem);
       }
       h2 {
-        font-size: 20px;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
       }
     }
   }
@@ -243,78 +271,17 @@ const Container = styled.div`
     border-radius: 50px;
   }
 
-  .box1-1 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-2 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-3 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-4 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-5 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-6 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-7 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-8 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-9 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
-  .box1-10 {
-    background: black;
-    width: 97%;
-    height: 50px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
-  }
+  .box1-1,
+  .box1-2,
+  .box1-3,
+  .box1-4,
+  .box1-5,
+  .box1-6,
+  .box1-7,
+  .box1-8,
+  .box1-9,
+  .box1-10,
   .box1-11 {
-    background: black;
     width: 97%;
     height: 50px;
     border-radius: 50px;
