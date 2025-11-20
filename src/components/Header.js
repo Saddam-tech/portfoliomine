@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import EmailIcon from "@material-ui/icons/Email";
-import FacebookIcon from "@material-ui/icons/Facebook";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import { Link as Scroll } from "react-scroll";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Navbar from "./Navbar";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import BackgroundAnimation from "./BgAnimation";
 import { useTranslation } from "react-i18next";
 
@@ -219,7 +219,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-
+    
     /* ensure the learn-more button sits above the background animation */
     position: relative;
     z-index: 3;

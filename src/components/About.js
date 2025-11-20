@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Skills from "./Skills";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 
 const About = () => {

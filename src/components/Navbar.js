@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Link as Scroll } from "react-scroll";
 import { useTranslation } from "react-i18next";
 const Navbar = ({ drawer, setDrawer }) => {
