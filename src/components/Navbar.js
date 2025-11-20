@@ -81,12 +81,9 @@ const Navbar = ({ drawer, setDrawer }) => {
           aria-expanded={drawer}
           type="button"
         >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
         </button>
 
         <div className="switch">
@@ -124,22 +121,22 @@ const Body = styled.div`
     align-items: center;
   }
 
+  /* Simplified 3-bar hamburger button */
   #nav-icon2 {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 40px;
     position: relative;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     background: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
     @media screen and (min-width: 728px) {
       display: none;
     }
@@ -147,90 +144,23 @@ const Body = styled.div`
 
   #nav-icon2 span {
     display: block;
-    position: absolute;
-    height: 5px;
-    width: 35%;
+    width: 26px;
+    height: 3px;
     background: #47c8d6;
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+    border-radius: 2px;
+    transition: transform 0.28s ease, opacity 0.2s ease;
   }
 
-  #nav-icon2 span:nth-child(even) {
-    left: 50%;
-    border-radius: 0 9px 9px 0;
-  }
-
-  #nav-icon2 span:nth-child(odd) {
-    left: 10px;
-    border-radius: 9px 0 0 9px;
-  }
-
-  #nav-icon2 span:nth-child(1),
-  #nav-icon2 span:nth-child(2) {
-    top: 0px;
-  }
-
-  #nav-icon2 span:nth-child(3),
-  #nav-icon2 span:nth-child(4) {
-    top: 10px;
-  }
-
-  #nav-icon2 span:nth-child(5),
-  #nav-icon2 span:nth-child(6) {
-    top: 20px;
-  }
-
-  #nav-icon2.open span:nth-child(1),
-  #nav-icon2.open span:nth-child(6) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  #nav-icon2.open span:nth-child(2),
-  #nav-icon2.open span:nth-child(5) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-
+  /* Open state: morph into an X */
   #nav-icon2.open span:nth-child(1) {
-    left: 10px;
-    top: 4px;
+    transform: translateY(8px) rotate(45deg);
   }
-
   #nav-icon2.open span:nth-child(2) {
-    left: calc(50% - 5px);
-    top: 4px;
+    opacity: 0;
+    transform: scaleX(0.1);
   }
-
   #nav-icon2.open span:nth-child(3) {
-    left: -50%;
-    opacity: 0;
-  }
-
-  #nav-icon2.open span:nth-child(4) {
-    left: 100%;
-    opacity: 0;
-  }
-
-  #nav-icon2.open span:nth-child(5) {
-    left: 10px;
-    top: 20px;
-  }
-
-  #nav-icon2.open span:nth-child(6) {
-    left: calc(50% - 5px);
-    top: 20px;
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .switch {
@@ -239,7 +169,8 @@ const Body = styled.div`
     margin: 0 5px;
 
     @media screen and (max-width: 728px) {
-      margin: 25px 10px 0;
+      margin: 10px 10px 0;
+      align-self: center;
     }
   }
 

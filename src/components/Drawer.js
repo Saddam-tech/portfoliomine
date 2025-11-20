@@ -46,7 +46,8 @@ const Container = styled.div`
   transition: 0.4s ease-in-out;
   opacity: 0.9;
   width: 75%;
-  z-index: 998;
+  /* Ensure drawer appears above the navbar */
+  z-index: 1001;
   overflow: hidden;
 
   ul {
@@ -93,6 +94,11 @@ const Container = styled.div`
       transition: 0.25s;
       background-color: #f2f2f2;
     }
+  }
+  /* Make sure any .link elements inside the drawer are visible on white background */
+  .link {
+    color: #000000 !important;
+    text-decoration: none;
   }
   @media screen and (min-width: 728px) {
     display: none;

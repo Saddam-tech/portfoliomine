@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-const Project = ({ link, title, description, src, video, gh }) => {
+const Project = ({ link, title, description, src, video }) => {
   const { t } = useTranslation();
   return (
     <Container>

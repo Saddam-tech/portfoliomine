@@ -21,6 +21,18 @@ const Skills = () => {
           </div>
         </Fade>
         <Fade right>
+          <h2>Python</h2>
+          <div className="box1">
+            <div className="box1-4"></div>
+          </div>
+        </Fade>
+        <Fade right>
+          <h2>Local LLM Deployment using vLLM, TensorRT-LLM, Llama.CPP</h2>
+          <div className="box1">
+            <div className="box1-2"></div>
+          </div>
+        </Fade>
+        <Fade right>
           <h2>Solidity</h2>
           <div className="box1">
             <div className="box1-2"></div>
@@ -39,57 +51,7 @@ const Skills = () => {
           </div>
         </Fade>
         <Fade right>
-          <h2>Sequalize</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
           <h2>RabbitMQ</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Kafka</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Python</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Git</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Socket.io</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>
-            AWS/CloudFlare/Netlify server/domain deployment and management
-          </h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Supabase Auth and Database management</h2>
-          <div className="box1">
-            <div className="box1-4"></div>
-          </div>
-        </Fade>
-        <Fade right>
-          <h2>Docker</h2>
           <div className="box1">
             <div className="box1-4"></div>
           </div>
@@ -116,18 +78,6 @@ const Skills = () => {
           <h2>VueJS</h2>
           <div className="box1">
             <div className="box1-10"></div>
-          </div>
-        </Fade>
-        <Fade left>
-          <h2>Quasar (VueJS framework)</h2>
-          <div className="box1">
-            <div className="box1-11"></div>
-          </div>
-        </Fade>
-        <Fade left>
-          <h2>NuxtJS</h2>
-          <div className="box1">
-            <div className="box1-11"></div>
           </div>
         </Fade>
       </div>

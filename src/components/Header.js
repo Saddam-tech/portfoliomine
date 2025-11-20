@@ -154,6 +154,8 @@ const Container = styled.div`
     transform-origin: center center;
     z-index: 1;
     opacity: 0.65;
+    /* Prevent the background animation from capturing pointer events */
+    pointer-events: none;
 
     @media screen and (max-width: 1228px) {
       max-width: 800px;
@@ -217,6 +219,10 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    /* ensure the learn-more button sits above the background animation */
+    position: relative;
+    z-index: 3;
 
     button {
       border: none;

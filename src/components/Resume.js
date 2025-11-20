@@ -8,35 +8,45 @@ const Resume = () => {
   const [projects] = useState([
     {
       id: 1,
+      title: "Custom AI Agent",
+      description: "pr_desc_2",
+      link: "https://demo.darwinai.ai/gpt",
+      src: "./videos/real-gpt-demo.png",
+    },
+    {
+      id: 2,
+      title: "STT using OpenAI/Whisper",
+      description: "pr_desc_6",
+      link: "https://demo.darwinai.ai/gpt",
+      src: "./videos/real-stt-demo.png",
+    },
+    {
+      id: 3,
       title: "Decentralized Bridge",
       description: "pr_desc_1",
       link: "https://worldland.foundation/bridge",
       src: "./videos/bridge.jpeg",
-      gh: "https://docs.google.com/document/d/1_tDKk5OF8JIsOx_y99o3Gy7s-lcz-NtYkjjYl81hxXs/edit?usp=sharing",
     },
     {
-      id: 3,
+      id: 4,
       title: "Linear Timelock",
       description: "pr_desc_5",
       link: "https://worldland.foundation/timelock-contracts/sale/0x3951E741dC09E2b77796b0E2f74B9391F1D8D795",
       src: "./videos/timelock.jpeg",
-      gh: "https://github.com/Saddam-tech/LinearTimelock.git",
     },
     {
-      id: 7,
+      id: 5,
       title: "Forkify App",
       description: "pr_desc_3",
       link: "https://forkifymine.netlify.app/",
       src: "./videos/forkify.jpeg",
-      gh: "https://github.com/Saddam-tech/forkifymine.git",
     },
     {
-      id: 8,
+      id: 6,
       title: "NewsFeed App",
       description: "pr_desc_4",
       link: "https://newsfeed.netlify.app/",
       src: "./videos/newsfeed.jpeg",
-      gh: "https://github.com/Saddam-tech/newsFeed.com.git",
     },
   ]);
 

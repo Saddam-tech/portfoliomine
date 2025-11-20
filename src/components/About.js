@@ -16,18 +16,20 @@ const About = () => {
             <p>{t("description_1")}</p>
 
             <h1>{t("employment_history")}</h1>
-            <p>CreditIT</p>
-            <p>(2021.11.01 ~ 2022.03.01) {t("description_2")}</p>
+            <p>Darwin Intelligence</p>
+            <p>(2025.03 ~ Present) {t("description_5")}</p>
             <p>LiberVance</p>
             <p>
-              (2022.03.01 ~ Current) {t("description_4")} <br />
+              (2022.03 ~ 2025.03) {t("description_4")} <br />
               <a
                 target="_blank"
                 rel="noreferrer"
                 href="https://docs.google.com/document/d/1_tDKk5OF8JIsOx_y99o3Gy7s-lcz-NtYkjjYl81hxXs/edit?usp=sharing"
               >
                 {t("doc_link")}
-              </a>{" "}
+              </a>
+              <p>CreditIT</p>
+              <p>(2021.11 ~ 2022.03) {t("description_2")}</p>
             </p>
           </Fade>
           <Fade left>
